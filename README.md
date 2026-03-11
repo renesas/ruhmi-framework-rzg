@@ -1,2 +1,3 @@
 # ruhmi-framework-rzg
-Renesas RUHMI supporting RZ/G3E
+# This repository is under construction. 
+# All contents is NOT ready for use.
