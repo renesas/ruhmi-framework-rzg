@@ -1,38 +1,70 @@
 # RUHMI Framework AI Model Compiler for RZ/G3E
 
-# *This repository is under construction. All contents is NOT ready for use.*
+[![License](https://img.shields.io/badge/License-LICENSE.md-blue.svg)](LICENSE.md)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg)](install/readme.md#host-environment-setup)
+[![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](#quick-start)
+[![Status](https://img.shields.io/badge/Status-Under%20Construction-orange.svg)](#project-status)
 
-**Robust Unified Heterogeneous Model Integration**   
-- A framework for AI model optimization and deployment, this GitHub provides the AI model Compiler for Renesas RZ/G3E powered by EdgeCortix® MERA™.
+RUHMI (Robust Unified Heterogeneous Model Integration) provides an AI model compiler workflow for Renesas RZ/G3E.  
+This repository includes installation assets, model deployment scripts, and application examples.
 
-[![License](https://img.shields.io/badge/License-See%20LICENSE.md-blue.svg)](LICENSE.md)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg)]()
-[![Python](https://img.shields.io/badge/Python-3.10-green.svg)]()
+## Project Status
 
-## Introduction
+This repository is actively being prepared.  
+Some documents and assets are still in progress and may change.
 
-RUHMI Framework[^1] provides a compiler and the necessary tools to convert machine learning models into binary file compatible with Renesas MP  RZ/G3E.
+## Overview
 
-[^1]: RUHMI Framework's AI Compiler is powered by EdgeCortix® MERA™.
+RUHMI Framework provides tools to compile machine learning models into deployment artifacts compatible with RZ/G3E.
 
-## RUHMI Framework Workflow
-![TDB](docs/assets/workflow_ruhmi.GIF)
+The AI compiler stack is powered by EdgeCortix MERA.
 
+## Workflow
+
+Model preparation and deployment scripts are available in this repository.
+
+![RZ/G3E Application Flow](docs/assets/app-flow_img.png)
 
 ## Quick Start
 
-Get up and running in 6 steps (Ubuntu Linux / WSL):
+The fastest path to first output is:
+
+1. Prepare Ubuntu 22.04 (native Linux or WSL).
+2. Create and activate a Python virtual environment.
+3. Install the host MERA package and required Python packages.
+4. Place a source model in `source_model_files`.
+5. Run `scripts/deploy.py` to generate deploy artifacts.
+6. Run `scripts/gen_ref_data.py` to create reference input/output binaries.
+
+Example host setup:
 
 ```bash
-
-TBD
-
+python3.10 -m venv host_env
+source host_env/bin/activate
+python -m pip install --upgrade pip
+python -m pip install install/mera-2.5.0+pkg.3782-cp310-cp310-manylinux_2_27_x86_64.whl
+python -m pip install tensorflow
+python -m pip install ethos-u-vela==4.0.0
 ```
 
-📖 For detailed installation instructions, see the [Installation Guide](install/README.md).
+For full details, see the [Installation Guide](install/readme.md).
 
+## Repository Layout
+
+- `install/`: compiler/runtime wheel files and installation notes
+- `scripts/`: model deployment and reference data generation scripts
+- `application_examples/`: sample applications for RZ/G3E
+- `docs/assets/`: images used by documentation
+
+## Application Examples
+
+- [Image Classification](application_examples/image_classification/README.md)
+- [Face Detection](application_examples/face_detection/README.md)
 
 ## Supported Embedded Platforms
 
 - Renesas MPU RZ/G3E
 
+## License
+
+See [LICENSE.md](LICENSE.md).
