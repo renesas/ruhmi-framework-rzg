@@ -8,10 +8,10 @@
 RUHMI (Robust Unified Heterogeneous Model Integration) provides an AI model compiler workflow for Renesas RZ/G3E.  
 This repository includes installation assets, model deployment scripts, and application examples.
 
-## Project Status
+# Project Status
 
-This repository is actively being prepared.  
-Some documents and assets are still in progress and may change.
+# This repository is actively being prepared.  
+# Some documents and assets are still in progress and may change.
 
 ## Overview
 
