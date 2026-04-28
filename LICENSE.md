@@ -26,7 +26,7 @@ In the procedure to install it into your host machine, some software components 
 
 |Component|included by|License|
 |---|---|---|
-|mera G3E compiler and runtime packages|n/a|*TBD*|
+|MERA RZ/G3E Support Packages (binaries & whl files)|n/a| Apache, Version 2.0|
 |PyYAML|mera|MIT LICENSE|
 |Pygments|pytest|BSD-2-CLAUSE|
 |contourpy|matplotlib, seaborn|BSD LICENSE|
