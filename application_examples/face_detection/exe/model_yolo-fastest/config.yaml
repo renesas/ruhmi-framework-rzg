@@ -1,0 +1,8 @@
+models:
+- name: yolo-fastest_192_face_v4
+  data_directory: yolo-fastest_192_face_v4/
+  inputs:
+  - name: image_input
+    data_type: int8
+    file_name: input-0.bin
+    shape: [1, 192, 192, 1]

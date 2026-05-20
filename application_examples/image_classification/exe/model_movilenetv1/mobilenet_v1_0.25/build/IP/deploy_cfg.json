@@ -1,0 +1,38 @@
+{
+    "schema": 2,
+    "metadata": {},
+    "checksums": {},
+    "devices": [
+        "CPU",
+        "ETHOS_U55"
+    ],
+    "model_path": "/shared/models/mobilenet_v1_0.25.tflite",
+    "output_dir": "/shared/model_mobilenetv1/mobilenet_v1_0.25/build/IP",
+    "symbolic_dimensions": {},
+    "model_info": {},
+    "frontend_options": {
+        "kv_cache_length": 0,
+        "attention_dim_pad": 32,
+        "input_norm": {}
+    },
+    "backend_options": {
+        "cpu": {
+            "host_arch": "arm"
+        },
+        "dna": {
+            "arch_cfg": "ALT3",
+            "ccfg": "{}",
+            "extract_qtz_io_to_cpu": true
+        },
+        "ccodegen": {
+            "enable_ethos": false,
+            "enable_ospi": false,
+            "enable_ref_data": false,
+            "convert_canonical": false
+        },
+        "dnax": {
+            "enable_cpu_only": false
+        }
+    },
+    "fe_mode": "FULL"
+}

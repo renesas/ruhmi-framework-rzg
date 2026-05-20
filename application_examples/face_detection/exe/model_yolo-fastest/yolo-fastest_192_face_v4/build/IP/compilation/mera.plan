@@ -1,0 +1,98 @@
+{
+  "execution": {
+    "stages": [
+      [
+        [
+          [
+            {
+              "backend": "ethos_u55",
+              "binaries_location": "sub_0000__ARM_ETHOS_U55",
+              "name": "sub_0000"
+            },
+            {
+              "input_buffers": {
+                "image_input": 0
+              },
+              "input_order": [
+                "image_input"
+              ],
+              "output_buffers": {
+                "Identity_1_70284": 2,
+                "Identity_70275": 1
+              },
+              "output_order": [
+                "Identity_70275",
+                "Identity_1_70284"
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "memory": {
+    "buffers": [
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 36864,
+        "data_type": "int8",
+        "name": "image_input",
+        "offset": 0,
+        "shape": [
+          1,
+          192,
+          192,
+          1
+        ],
+        "size": 36864
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 648,
+        "data_type": "int8",
+        "name": "Identity_70275",
+        "offset": 0,
+        "shape": [
+          1,
+          6,
+          6,
+          18
+        ],
+        "size": 648
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 2592,
+        "data_type": "int8",
+        "name": "Identity_1_70284",
+        "offset": 0,
+        "shape": [
+          1,
+          12,
+          12,
+          18
+        ],
+        "size": 2592
+      }
+    ],
+    "input_buffers": [
+      [
+        "image_input",
+        0
+      ]
+    ],
+    "output_buffers": [
+      [
+        "Identity_70275",
+        1
+      ],
+      [
+        "Identity_1_70284",
+        2
+      ]
+    ]
+  }
+}

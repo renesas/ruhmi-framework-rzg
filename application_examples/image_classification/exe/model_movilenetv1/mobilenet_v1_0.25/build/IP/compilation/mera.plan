@@ -1,0 +1,75 @@
+{
+  "execution": {
+    "stages": [
+      [
+        [
+          [
+            {
+              "backend": "ethos_u55",
+              "binaries_location": "sub_0000__ARM_ETHOS_U55",
+              "name": "sub_0000"
+            },
+            {
+              "input_buffers": {
+                "serving_default_input_1_0": 0
+              },
+              "input_order": [
+                "serving_default_input_1_0"
+              ],
+              "output_buffers": {
+                "StatefulPartitionedCall_0_70098": 1
+              },
+              "output_order": [
+                "StatefulPartitionedCall_0_70098"
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "memory": {
+    "buffers": [
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 150528,
+        "data_type": "int8",
+        "name": "serving_default_input_1_0",
+        "offset": 0,
+        "shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "size": 150528
+      },
+      {
+        "alignment": 256,
+        "alloc_mode": "linux_malloc",
+        "bytes_size": 1000,
+        "data_type": "int8",
+        "name": "StatefulPartitionedCall_0_70098",
+        "offset": 0,
+        "shape": [
+          1,
+          1000
+        ],
+        "size": 1000
+      }
+    ],
+    "input_buffers": [
+      [
+        "serving_default_input_1_0",
+        0
+      ]
+    ],
+    "output_buffers": [
+      [
+        "StatefulPartitionedCall_0_70098",
+        1
+      ]
+    ]
+  }
+}

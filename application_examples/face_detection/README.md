@@ -1,140 +1,87 @@
-# RZ/G3E AI Application Specification (Face Detection)
+# RZ/G3E Face Detection Application
 
-## Introduction
-This document describes how to build and run the Face Detection application running on RZ/G3E platform.  
-This face detection app gets input from a USB camera or image file and displays the detection results on HDMI monitor.
+## Overview
 
-The AI model used in this application is compiled with the RUHMI AI Framework and executed on the Ethos-U55 accelerator.
+This application performs face detection on RZ/G3E using either a USB camera stream or a still image file.
+Detection results are shown on an HDMI display.
 
-![Demo_image, RA8P1 AI Appのデモ画像を想定しています。](./images/app-demo.png)
+The model is compiled with the RUHMI AI Framework and executed with Ethos-U55 acceleration.
+
+## Operation flow
+<img src="../../docs/assets/app-flow_face.png" alt="Face Detection Flow" width="360" />
 
 ## Target Environment
-- **Board**
-  - RZ/G3E EVK
-- **Software**
-  - RZ/G3E Ethos-U Package (including the RZ/G3E RUHMI AI Framework)
-- **Peripheral Devices**
-  - USB Camera
-  - HDMI Display
-  - microSD card (optional, used for boot media)
 
-The following figure shows the hardware and system configuration of the Face Detection application on RZ/G3E.
+- Board: RZ/G3E EVK
+- Software: RZ/G3E Ethos-U Package (including RUHMI runtime)
+- Peripherals:
+  - USB camera
+  - HDMI display
+  - microSD card (optional)
 
-![G3E operation env](./images/app-system-config.png)
+System configuration:
+
+![Face Detection System](../../docs/assets/app-system-config_face.png)
 
 ## Directory Structure
 
-```
+```text
 .
-├── README.md                           // This document
-├── exe
-│   ├── face_detection                  // Application binary
-│   └── model_yolo-fastest              // AI model directory, compiled using the RUHMI AI Framework
-│          ├── config.yaml
-│          └── yolo-fastest_192_face_v4
-└── src	                                // Application source code
+  README.md
+    exe/
+    src/
 ```
 
-## AI Model Information
+`exe/` and `src/` are not included in this repository. Use the RZ/G3E release package for runnable assets.
 
-| AI Model                                                                           | Input size          | Output size                        |
-| ---------------------------------------------------------------------------------- | ------------------- | ---------------------------------- |
-| [yolo-fastest_192_face_v4.tflite](https://github.com/emza-vs/ModelZoo/tree/master) |  int8 [1,192,192,1] | int8[1,6,6,18]<br>int8[1,12,12,18] |
+## Model Information
 
-- [Model reference](https://github.com/renesas/ruhmi-framework-mcu/tree/main/application_examples/face_detection#model-reference)
+| Model | Input | Output |
+| --- | --- | --- |
+| yolo-fastest_192_face_v4.tflite | int8[1,192,192,1] | int8[1,6,6,18], int8[1,12,12,18] |
 
-## Application Flow
-### Mode: USB Camera
-
-Initialization:
-- Step 1. Parse command-line arguments.
-- Step 2. Load the AI model.
-
-Inference Loop:
-- Step 3. Acquire input frame from the USB camera.
-- Step 4. Pre-process input data.
-- Step 5. Prepare the input buffer for inference execution.
-- Step 6. Run inference using the RUHMI runtime.
-- Step 7. Retrieve inference results from the output buffer.
-- Step 8. Post-process the inference results.
-
-Steps 3 through 8 are executed repeatedly while the application is running.
-
-### Mode: Image file
-
-In the image file mode, the input image file is read from the file system on the RZ/G3E EVK.
-
-Initialization:
-- Step 1. Parse command-line arguments.
-- Step 2. Load the AI model.
-
-Inference Execution:
-- Step 3. Pre-process input data.
-- Step 4. Prepare the input buffer for inference execution.
-- Step 5. Run inference using the RUHMI runtime.
-- Step 6. Retrieve inference results from the output buffer.
-- Step 7. Post-process the inference results.
-
-The inference sequence (Steps 3 through 7) is executed once for the specified input image, and the detection result is displayed.
+Reference model source: https://github.com/emza-vs/ModelZoo/tree/master
 
 ## Build
 
-1. Prepare the target toolchain (SDK) provided in RZ/G3E Ethos Package and set up the environment.
-```bash
-$ ./rz-vlp-glibc-x86_64-core-image-weston-cortexa55-smarc-rzg3e-toolchain-x.x.x.sh
-$ source <path_to_SDK>/environment-setup-cortexa55-poky-linux
-```
-2. Build the application by following the commands below.
+Build is required only when `src/` is included in your release package.
+
+1. Install and source the RZ/G3E toolchain environment.
+2. Build the application:
 
 ```bash
-$ mkdir -p src/build
-$ cd src/build
-$ cmake ..
-$ make
+mkdir -p src/build
+cd src/build
+cmake ..
+make
 ```
 
-The application binary **face_detection** is generated in the build directory.
+Generated binary: `src/build/face_detection`
 
 ## Run
 
-Connect HDMI to the display, and USB-serial between your target board and PC.
-
-Boot the RZ/G3E EVK and copy the application and related files to the target board.  
-(e.g.) If you copy the application to your target board using Ethernet, run the following command on your host PC.
+Copy files to board:
 
 ```bash
-$ scp -r exe/ root@<TARGET_IP>:/home/root/
+scp -r exe/ root@<TARGET_IP>:/home/root/
 ```
 
-Then, run the AI App on the target board as below:
+USB camera mode:
 
-### USB camera mode
-
-(command)
 ```bash
-$ ./face_detection USB
+./face_detection USB
 ```
-Output:
-  - Model directory, including the AI model compiled with the RZ/G3E RUHMI AI Framework
-  - FPS (end-to-end)
-  - Number of faces detected
 
-### Image file mode
+Image file mode:
 
-(command)
 ```bash
 ./face_detection IMAGE <path_to_image>
 ```
-Output:
-  - Model directory, including the AI model compiled with the RZ/G3E RUHMI AI Framework
-  - FPS (Pre-process / Inference / Post-process)
-  - Number of faces detected
 
-**Note:** FPS values are shown for reference only and are not intended for performance evaluation.
+Expected output includes model info, FPS, and number of faces detected.
 
-The application can be terminated by pressing the **Enter** key on the console where it is running.
+## Notes
 
-
-## Licenses
-★ここは方針が決まったの上、記載いただけると幸いです。
-
+- FPS values are reference values only.
+- Press `Enter` in the running console to terminate the app.
+- Refer to `LICENSE.md` in the repository root for license information.

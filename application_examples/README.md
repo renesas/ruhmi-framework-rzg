@@ -7,6 +7,11 @@ This directory contains sample AI applications for Renesas RZ/G3E using the RUHM
 - [Image Classification](image_classification/README.md)
 - [Face Detection](face_detection/README.md)
 
+## Repository Scope
+
+This repository currently provides documentation only for the example applications.
+Application binaries (`exe/`) and source trees (`src/`) are distributed in the RZ/G3E release package, not in this repository.
+
 ## Target Environment
 
 - Board: [RZ/G3E-EVKIT](https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit)
@@ -28,7 +33,7 @@ Face detection setup:
 
 ## Basic Run Flow
 
-1. Build or obtain the application binary.
+1. Obtain the example package that includes `exe/` (and `src/` if build is required).
 2. Copy `exe/` assets to the board.
 3. Run in `USB` mode or `IMAGE` mode on the board.
 4. Verify FPS and inference result output in console.

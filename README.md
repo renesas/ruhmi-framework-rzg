@@ -1,17 +1,12 @@
 # RUHMI Framework AI Model Compiler for RZ/G3E
 
 [![License](https://img.shields.io/badge/License-LICENSE.md-blue.svg)](LICENSE.md)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg)](install/readme.md#host-environment-setup)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg)](install/README.md#host-environment-setup)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](#quick-start)
 [![Status](https://img.shields.io/badge/Status-Under%20Construction-orange.svg)](#project-status)
 
 RUHMI (Robust Unified Heterogeneous Model Integration) provides an AI model compiler workflow for Renesas RZ/G3E.  
 This repository includes installation assets, model deployment scripts, and application examples.
-
-# Project Status
-
-# This repository is actively being prepared.  
-# Some documents and assets are still in progress and may change.
 
 ## Overview
 
@@ -21,40 +16,61 @@ The AI compiler stack is powered by EdgeCortix MERA.
 
 ## Workflow
 
-Model preparation and deployment scripts are available in this repository.
+This repository provides the guidance for how to use RUHMI AI model compiler. Also provides some application examples with the the guidance for how to run on EK-RZ/G3E board.
 
-![RZ/G3E Application Flow](docs/assets/app-flow_img.png)
+![RZ/G3E Application Flow](docs/assets/g3e_workflow.gif)
 
 ## Quick Start
 
 The fastest path to first output is:
 
-1. Prepare Ubuntu 22.04 (native Linux or WSL).
-2. Create and activate a Python virtual environment.
-3. Install the host MERA package and required Python packages.
-4. Place a source model in `source_model_files`.
-5. Run `scripts/deploy.py` to generate deploy artifacts.
-6. Run `scripts/gen_ref_data.py` to create reference input/output binaries.
+1. Build the RUHMI Docker image from `scripts/Dockerfile`.
+2. Run the container with a host workspace mounted to `/shared`.
+3. Place one or more `.tflite` models in the mounted workspace.
+4. Run `generate-model-data.py` in the container to compile models and generate I/O binaries.
 
-Example host setup:
+Build image:
 
 ```bash
-python3.10 -m venv host_env
-source host_env/bin/activate
-python -m pip install --upgrade pip
-python -m pip install install/mera-2.5.0+pkg.3782-cp310-cp310-manylinux_2_27_x86_64.whl
-python -m pip install tensorflow
-python -m pip install ethos-u-vela==4.0.0
+docker build \
+  --build-arg UID=$(id -u) \
+  --build-arg GID=$(id -g) \
+  -t ruhmi-env \
+  -f scripts/Dockerfile \
+  scripts
 ```
 
-For full details, see the [Installation Guide](install/readme.md).
+Run container:
+
+```bash
+docker run --rm -it \
+  -v /path/to/work:/shared \
+  -w /shared \
+  ruhmi-env
+```
+
+Generate model data:
+
+```bash
+python3 /generate-model-data.py \
+  -d models_to_deploy \
+  -m model_1.tflite model_2.tflite
+```
+
+For full details, see:
+- [scripts/README.md](scripts/README.md)
+- [Dockerfile guide](docs/dockerfile.md)
+- [generate-model-data guide](docs/generate-model-data.md)
 
 ## Repository Layout
 
-- `install/`: compiler/runtime wheel files and installation notes
-- `scripts/`: model deployment and reference data generation scripts
-- `application_examples/`: sample applications for RZ/G3E
-- `docs/assets/`: images used by documentation
+- `application_examples/`: runnable sample apps and app-specific docs for RZ/G3E
+- `docs/`: supporting documentation and documentation assets
+- `install/`: MERA/RUHMI install artifacts (wheel files, shared libraries) and setup guide
+- `scripts/`: Docker build environment and model data generation script
+- `requirements-host.txt`: host-side Python dependency list
+- `README.md`: repository entry point
+- `LICENSE.md`: license terms
 
 ## Application Examples
 
@@ -68,3 +84,6 @@ For full details, see the [Installation Guide](install/readme.md).
 ## License
 
 See [LICENSE.md](LICENSE.md).
+
+
+[def]: doc/as

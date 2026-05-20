@@ -1,0 +1,2932 @@
+{
+  "subgraphs": [
+    {
+      "nodes": [
+        {
+          "attributes": {},
+          "input_names": {
+            "in_0": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "StatefulPartitionedCall_0_70098",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          },
+          "op_name": "OutputNode",
+          "output": {
+            "dt": "UInt8",
+            "layout": "x",
+            "name": "GraphOutputs",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "HW",
+            "name": "Int32VecConstant_70000",
+            "shape": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "HW",
+            "name": "Int32VecConstant_70000_0",
+            "shape": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "HW",
+            "name": "Int32VecConstant_70000_1",
+            "shape": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "HW",
+            "name": "Int32VecConstant_70000_2",
+            "shape": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "HW",
+            "name": "Int32VecConstant_70000_3",
+            "shape": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70001",
+            "shape": [
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "x",
+            "name": "Int32VecConstant_70002",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70003",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70003_0",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70003_1",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70004",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70005",
+            "shape": [
+              1000
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70007",
+            "shape": [
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70009",
+            "shape": [
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70011",
+            "shape": [
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70013",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70015",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70017",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70019",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70021",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70023",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70025",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70027",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70029",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70031",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70033",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70035",
+            "shape": [
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70037",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70039",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70041",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70043",
+            "shape": [
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70045",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70047",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70049",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70051",
+            "shape": [
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70053",
+            "shape": [
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70055",
+            "shape": [
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70057",
+            "shape": [
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int32VecConstant",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "Int32VecConstant_70059",
+            "shape": [
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70006",
+            "shape": [
+              1000,
+              1,
+              1,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70008",
+            "shape": [
+              256,
+              1,
+              1,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70010",
+            "shape": [
+              1,
+              3,
+              3,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70012",
+            "shape": [
+              256,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70014",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70016",
+            "shape": [
+              128,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70018",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70020",
+            "shape": [
+              128,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70022",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70024",
+            "shape": [
+              128,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70026",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70028",
+            "shape": [
+              128,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70030",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70032",
+            "shape": [
+              128,
+              1,
+              1,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70034",
+            "shape": [
+              1,
+              3,
+              3,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70036",
+            "shape": [
+              128,
+              1,
+              1,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70038",
+            "shape": [
+              1,
+              3,
+              3,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70040",
+            "shape": [
+              64,
+              1,
+              1,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70042",
+            "shape": [
+              1,
+              3,
+              3,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70044",
+            "shape": [
+              64,
+              1,
+              1,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70046",
+            "shape": [
+              1,
+              3,
+              3,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70048",
+            "shape": [
+              32,
+              1,
+              1,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70050",
+            "shape": [
+              1,
+              3,
+              3,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70052",
+            "shape": [
+              32,
+              1,
+              1,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70054",
+            "shape": [
+              1,
+              3,
+              3,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70056",
+            "shape": [
+              16,
+              1,
+              1,
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70058",
+            "shape": [
+              1,
+              3,
+              3,
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Int8VecConstant",
+          "output": {
+            "dt": "Int8",
+            "layout": "OHWI",
+            "name": "Int8VecConstant_70060",
+            "shape": [
+              8,
+              3,
+              3,
+              3
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "beta": "1"
+          },
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "HW",
+              "name": "mobilenet_0_25_224_reshape_2_Reshape_70097",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          },
+          "op_name": "TFLiteSoftmax",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "StatefulPartitionedCall_0_70098",
+            "shape": [
+              1,
+              1000
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70059",
+              "shape": [
+                8
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "serving_default_input_1_0",
+              "shape": [
+                1,
+                224,
+                224,
+                3
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70060",
+              "shape": [
+                8,
+                3,
+                3,
+                3
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061",
+            "shape": [
+              1,
+              112,
+              112,
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70021",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70022",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70017",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70018",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70013",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pad_12_Pad_70087",
+              "shape": [
+                1,
+                15,
+                15,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70014",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088",
+            "shape": [
+              1,
+              7,
+              7,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70009",
+              "shape": [
+                256
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089",
+              "shape": [
+                1,
+                7,
+                7,
+                256
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70010",
+              "shape": [
+                1,
+                3,
+                3,
+                256
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090",
+            "shape": [
+              1,
+              7,
+              7,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70057",
+              "shape": [
+                8
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061",
+              "shape": [
+                1,
+                112,
+                112,
+                8
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70058",
+              "shape": [
+                1,
+                3,
+                3,
+                8
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062",
+            "shape": [
+              1,
+              112,
+              112,
+              8
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70053",
+              "shape": [
+                16
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pad_2_Pad_70064",
+              "shape": [
+                1,
+                113,
+                113,
+                16
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70054",
+              "shape": [
+                1,
+                3,
+                3,
+                16
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065",
+            "shape": [
+              1,
+              56,
+              56,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70049",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066",
+              "shape": [
+                1,
+                56,
+                56,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70050",
+              "shape": [
+                1,
+                3,
+                3,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067",
+            "shape": [
+              1,
+              56,
+              56,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70045",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pad_4_Pad_70069",
+              "shape": [
+                1,
+                57,
+                57,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70046",
+              "shape": [
+                1,
+                3,
+                3,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070",
+            "shape": [
+              1,
+              28,
+              28,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70041",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071",
+              "shape": [
+                1,
+                28,
+                28,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70042",
+              "shape": [
+                1,
+                3,
+                3,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072",
+            "shape": [
+              1,
+              28,
+              28,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "VALID",
+            "stride_h": "2",
+            "stride_w": "2"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70037",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pad_6_Pad_70074",
+              "shape": [
+                1,
+                29,
+                29,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70038",
+              "shape": [
+                1,
+                3,
+                3,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075",
+            "shape": [
+              1,
+              14,
+              14,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70033",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70034",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70029",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70030",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "1",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "1",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70025",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70026",
+              "shape": [
+                1,
+                3,
+                3,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "padding": {
+              "dt": "Int32",
+              "layout": "HW",
+              "name": "Int32VecConstant_70000_0",
+              "shape": [
+                4,
+                2
+              ]
+            }
+          },
+          "op_name": "TFLitePad",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pad_12_Pad_70087",
+            "shape": [
+              1,
+              15,
+              15,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063",
+              "shape": [
+                1,
+                112,
+                112,
+                16
+              ]
+            },
+            "padding": {
+              "dt": "Int32",
+              "layout": "HW",
+              "name": "Int32VecConstant_70000_1",
+              "shape": [
+                4,
+                2
+              ]
+            }
+          },
+          "op_name": "TFLitePad",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pad_2_Pad_70064",
+            "shape": [
+              1,
+              113,
+              113,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068",
+              "shape": [
+                1,
+                56,
+                56,
+                32
+              ]
+            },
+            "padding": {
+              "dt": "Int32",
+              "layout": "HW",
+              "name": "Int32VecConstant_70000_2",
+              "shape": [
+                4,
+                2
+              ]
+            }
+          },
+          "op_name": "TFLitePad",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pad_4_Pad_70069",
+            "shape": [
+              1,
+              57,
+              57,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073",
+              "shape": [
+                1,
+                28,
+                28,
+                64
+              ]
+            },
+            "padding": {
+              "dt": "Int32",
+              "layout": "HW",
+              "name": "Int32VecConstant_70000_3",
+              "shape": [
+                4,
+                2
+              ]
+            }
+          },
+          "op_name": "TFLitePad",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pad_6_Pad_70074",
+            "shape": [
+              1,
+              29,
+              29,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "NONE",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70005",
+              "shape": [
+                1000
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_global_average_pooling2d_Mean_70092",
+              "shape": [
+                1,
+                1,
+                1,
+                256
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70006",
+              "shape": [
+                1000,
+                1,
+                1,
+                256
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093",
+            "shape": [
+              1,
+              1,
+              1,
+              1000
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70019",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70020",
+              "shape": [
+                128,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70015",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70016",
+              "shape": [
+                128,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70011",
+              "shape": [
+                256
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088",
+              "shape": [
+                1,
+                7,
+                7,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70012",
+              "shape": [
+                256,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089",
+            "shape": [
+              1,
+              7,
+              7,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70007",
+              "shape": [
+                256
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090",
+              "shape": [
+                1,
+                7,
+                7,
+                256
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70008",
+              "shape": [
+                256,
+                1,
+                1,
+                256
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091",
+            "shape": [
+              1,
+              7,
+              7,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70055",
+              "shape": [
+                16
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062",
+              "shape": [
+                1,
+                112,
+                112,
+                8
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70056",
+              "shape": [
+                16,
+                1,
+                1,
+                8
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063",
+            "shape": [
+              1,
+              112,
+              112,
+              16
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70051",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065",
+              "shape": [
+                1,
+                56,
+                56,
+                16
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70052",
+              "shape": [
+                32,
+                1,
+                1,
+                16
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066",
+            "shape": [
+              1,
+              56,
+              56,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70047",
+              "shape": [
+                32
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067",
+              "shape": [
+                1,
+                56,
+                56,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70048",
+              "shape": [
+                32,
+                1,
+                1,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068",
+            "shape": [
+              1,
+              56,
+              56,
+              32
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70043",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070",
+              "shape": [
+                1,
+                28,
+                28,
+                32
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70044",
+              "shape": [
+                64,
+                1,
+                1,
+                32
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071",
+            "shape": [
+              1,
+              28,
+              28,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70039",
+              "shape": [
+                64
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072",
+              "shape": [
+                1,
+                28,
+                28,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70040",
+              "shape": [
+                64,
+                1,
+                1,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073",
+            "shape": [
+              1,
+              28,
+              28,
+              64
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70035",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075",
+              "shape": [
+                1,
+                14,
+                14,
+                64
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70036",
+              "shape": [
+                128,
+                1,
+                1,
+                64
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70031",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70032",
+              "shape": [
+                128,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70027",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70028",
+              "shape": [
+                128,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "depth_multiplier": "0",
+            "dilation_h": "1",
+            "dilation_w": "1",
+            "fused_activation": "RELU6",
+            "is_depthwise": "0",
+            "padding": "SAME",
+            "stride_h": "1",
+            "stride_w": "1"
+          },
+          "input_names": {
+            "bias": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70023",
+              "shape": [
+                128
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081",
+              "shape": [
+                1,
+                14,
+                14,
+                128
+              ]
+            },
+            "kernel": {
+              "dt": "Int8",
+              "layout": "OHWI",
+              "name": "Int8VecConstant_70024",
+              "shape": [
+                128,
+                1,
+                1,
+                128
+              ]
+            }
+          },
+          "op_name": "TFLiteQConv2dBias",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082",
+            "shape": [
+              1,
+              14,
+              14,
+              128
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "keep_dims": "1"
+          },
+          "input_names": {
+            "axes": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70001",
+              "shape": [
+                2
+              ]
+            },
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091",
+              "shape": [
+                1,
+                7,
+                7,
+                256
+              ]
+            }
+          },
+          "op_name": "TFLiteMean",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "mobilenet_0_25_224_global_average_pooling2d_Mean_70092",
+            "shape": [
+              1,
+              1,
+              1,
+              256
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "data": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093",
+              "shape": [
+                1,
+                1,
+                1,
+                1000
+              ]
+            },
+            "shape": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "mobilenet_0_25_224_reshape_2_Reshape_shape_70096",
+              "shape": [
+                2
+              ]
+            }
+          },
+          "op_name": "CanReshape",
+          "output": {
+            "dt": "Int8",
+            "layout": "HW",
+            "name": "mobilenet_0_25_224_reshape_2_Reshape_70097",
+            "shape": [
+              1,
+              1000
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "axis": "0"
+          },
+          "input_names": {
+            "in_0": {
+              "dt": "Int32",
+              "layout": "x",
+              "name": "mobilenet_0_25_224_reshape_2_strided_slice_70095",
+              "shape": [
+                1
+              ]
+            },
+            "in_1": {
+              "dt": "Int32",
+              "layout": "x",
+              "name": "Int32VecConstant_70002",
+              "shape": [
+                1
+              ]
+            }
+          },
+          "op_name": "TFLitePack",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "mobilenet_0_25_224_reshape_2_Reshape_shape_70096",
+            "shape": [
+              2
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {
+            "input": {
+              "dt": "Int8",
+              "layout": "NHWC",
+              "name": "mobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093",
+              "shape": [
+                1,
+                1,
+                1,
+                1000
+              ]
+            }
+          },
+          "op_name": "TFLiteShape",
+          "output": {
+            "dt": "Int32",
+            "layout": "C",
+            "name": "mobilenet_0_25_224_reshape_2_Shape_70094",
+            "shape": [
+              4
+            ]
+          }
+        },
+        {
+          "attributes": {
+            "begin_mask": "0",
+            "ellipsis_mask": "0",
+            "end_mask": "0",
+            "new_axis_mask": "0",
+            "shrink_axis_mask": "1"
+          },
+          "input_names": {
+            "begin": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70004",
+              "shape": [
+                1
+              ]
+            },
+            "end": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70003_0",
+              "shape": [
+                1
+              ]
+            },
+            "input": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "mobilenet_0_25_224_reshape_2_Shape_70094",
+              "shape": [
+                4
+              ]
+            },
+            "strides": {
+              "dt": "Int32",
+              "layout": "C",
+              "name": "Int32VecConstant_70003_1",
+              "shape": [
+                1
+              ]
+            }
+          },
+          "op_name": "TFLiteStridedSlice",
+          "output": {
+            "dt": "Int32",
+            "layout": "x",
+            "name": "mobilenet_0_25_224_reshape_2_strided_slice_70095",
+            "shape": [
+              1
+            ]
+          }
+        },
+        {
+          "attributes": {},
+          "input_names": {},
+          "op_name": "Var",
+          "output": {
+            "dt": "Int8",
+            "layout": "NHWC",
+            "name": "serving_default_input_1_0",
+            "shape": [
+              1,
+              224,
+              224,
+              3
+            ]
+          }
+        }
+      ],
+      "subgraph_name": "sub_0",
+      "target_name": "ARM_ETHOS_U55"
+    }
+  ]
+}

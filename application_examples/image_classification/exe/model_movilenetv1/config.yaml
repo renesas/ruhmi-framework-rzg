@@ -1,0 +1,8 @@
+models:
+- name: mobilenet_v1_0.25
+  data_directory: mobilenet_v1_0.25/
+  inputs:
+  - name: serving_default_input_1_0
+    data_type: int8
+    file_name: input-0.bin
+    shape: [1, 224, 224, 3]

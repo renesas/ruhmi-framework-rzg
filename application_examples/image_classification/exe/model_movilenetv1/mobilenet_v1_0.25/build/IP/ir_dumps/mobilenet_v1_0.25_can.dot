@@ -1,0 +1,598 @@
+digraph g {
+subgraph cluster_graph{
+label = "graph";
+color = red;
+graphGraphOutputs [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD PORT="StatefulPartitionedCall_0_70098" BGCOLOR="white">StatefulPartitionedCall_0_70098 i8(1x1000)[HW]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000\ni32(4x2)[HW]"];
+graphInt32VecConstant_70000_0 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000_0\ni32(4x2)[HW]"];
+graphInt32VecConstant_70000_1 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000_1\ni32(4x2)[HW]"];
+graphInt32VecConstant_70000_2 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000_2\ni32(4x2)[HW]"];
+graphInt32VecConstant_70000_3 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70000_3\ni32(4x2)[HW]"];
+graphInt32VecConstant_70001 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70001\ni32(2)[C]"];
+graphInt32VecConstant_70002 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70002\ni32(1)[x]"];
+graphInt32VecConstant_70003 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70003\ni32(1)[C]"];
+graphInt32VecConstant_70003_0 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70003_0\ni32(1)[C]"];
+graphInt32VecConstant_70003_1 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70003_1\ni32(1)[C]"];
+graphInt32VecConstant_70004 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70004\ni32(1)[C]"];
+graphInt32VecConstant_70005 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70005\ni32(1000)[C]"];
+graphInt32VecConstant_70007 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70007\ni32(256)[C]"];
+graphInt32VecConstant_70009 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70009\ni32(256)[C]"];
+graphInt32VecConstant_70011 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70011\ni32(256)[C]"];
+graphInt32VecConstant_70013 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70013\ni32(128)[C]"];
+graphInt32VecConstant_70015 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70015\ni32(128)[C]"];
+graphInt32VecConstant_70017 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70017\ni32(128)[C]"];
+graphInt32VecConstant_70019 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70019\ni32(128)[C]"];
+graphInt32VecConstant_70021 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70021\ni32(128)[C]"];
+graphInt32VecConstant_70023 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70023\ni32(128)[C]"];
+graphInt32VecConstant_70025 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70025\ni32(128)[C]"];
+graphInt32VecConstant_70027 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70027\ni32(128)[C]"];
+graphInt32VecConstant_70029 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70029\ni32(128)[C]"];
+graphInt32VecConstant_70031 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70031\ni32(128)[C]"];
+graphInt32VecConstant_70033 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70033\ni32(128)[C]"];
+graphInt32VecConstant_70035 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70035\ni32(128)[C]"];
+graphInt32VecConstant_70037 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70037\ni32(64)[C]"];
+graphInt32VecConstant_70039 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70039\ni32(64)[C]"];
+graphInt32VecConstant_70041 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70041\ni32(64)[C]"];
+graphInt32VecConstant_70043 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70043\ni32(64)[C]"];
+graphInt32VecConstant_70045 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70045\ni32(32)[C]"];
+graphInt32VecConstant_70047 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70047\ni32(32)[C]"];
+graphInt32VecConstant_70049 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70049\ni32(32)[C]"];
+graphInt32VecConstant_70051 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70051\ni32(32)[C]"];
+graphInt32VecConstant_70053 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70053\ni32(16)[C]"];
+graphInt32VecConstant_70055 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70055\ni32(16)[C]"];
+graphInt32VecConstant_70057 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70057\ni32(8)[C]"];
+graphInt32VecConstant_70059 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int32VecConstant, Int32VecConstant_70059\ni32(8)[C]"];
+graphInt8VecConstant_70006 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70006\ni8(1000x1x1x256)[OHWI]"];
+graphInt8VecConstant_70008 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70008\ni8(256x1x1x256)[OHWI]"];
+graphInt8VecConstant_70010 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70010\ni8(1x3x3x256)[OHWI]"];
+graphInt8VecConstant_70012 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70012\ni8(256x1x1x128)[OHWI]"];
+graphInt8VecConstant_70014 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70014\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70016 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70016\ni8(128x1x1x128)[OHWI]"];
+graphInt8VecConstant_70018 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70018\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70020 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70020\ni8(128x1x1x128)[OHWI]"];
+graphInt8VecConstant_70022 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70022\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70024 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70024\ni8(128x1x1x128)[OHWI]"];
+graphInt8VecConstant_70026 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70026\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70028 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70028\ni8(128x1x1x128)[OHWI]"];
+graphInt8VecConstant_70030 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70030\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70032 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70032\ni8(128x1x1x128)[OHWI]"];
+graphInt8VecConstant_70034 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70034\ni8(1x3x3x128)[OHWI]"];
+graphInt8VecConstant_70036 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70036\ni8(128x1x1x64)[OHWI]"];
+graphInt8VecConstant_70038 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70038\ni8(1x3x3x64)[OHWI]"];
+graphInt8VecConstant_70040 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70040\ni8(64x1x1x64)[OHWI]"];
+graphInt8VecConstant_70042 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70042\ni8(1x3x3x64)[OHWI]"];
+graphInt8VecConstant_70044 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70044\ni8(64x1x1x32)[OHWI]"];
+graphInt8VecConstant_70046 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70046\ni8(1x3x3x32)[OHWI]"];
+graphInt8VecConstant_70048 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70048\ni8(32x1x1x32)[OHWI]"];
+graphInt8VecConstant_70050 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70050\ni8(1x3x3x32)[OHWI]"];
+graphInt8VecConstant_70052 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70052\ni8(32x1x1x16)[OHWI]"];
+graphInt8VecConstant_70054 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70054\ni8(1x3x3x16)[OHWI]"];
+graphInt8VecConstant_70056 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70056\ni8(16x1x1x8)[OHWI]"];
+graphInt8VecConstant_70058 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70058\ni8(1x3x3x8)[OHWI]"];
+graphInt8VecConstant_70060 [shape=cylinder, fillcolor=antiquewhite, fontsize="12pt", style=filled, label="Int8VecConstant, Int8VecConstant_70060\ni8(8x3x3x3)[OHWI]"];
+graphStatefulPartitionedCall_0_70098 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x1000)[HW]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteSoftmax, StatefulPartitionedCall_0_70098<FONT POINT-SIZE="8"><BR/>
+beta = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i8(1x1000)[HW]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x224x224x3)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(8x3x3x3)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(8)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x112x112x8)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x15x15x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x7x7x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x7x7x256)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x256)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(256)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x7x7x256)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x112x112x8)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x8)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(8)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x112x112x8)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x113x113x16)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x16)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(16)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x56x56x16)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x56x56x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x56x56x32)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x57x57x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x28x28x32)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x64)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x64)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x28x28x64)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x29x29x64)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x64)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = VALID<BR/>
+stride_h = 2<BR/>
+stride_w = 2<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x64)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1x3x3x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 1<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 1<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pad_12_Pad_70087 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="padding" BGCOLOR="white">padding i32(4x2)[HW]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePad, mobilenet_0_25_224_conv_pad_12_Pad_70087</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x15x15x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pad_2_Pad_70064 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x112x112x16)[NHWC]</TD><TD PORT="padding" BGCOLOR="white">padding i32(4x2)[HW]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePad, mobilenet_0_25_224_conv_pad_2_Pad_70064</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x113x113x16)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pad_4_Pad_70069 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x56x56x32)[NHWC]</TD><TD PORT="padding" BGCOLOR="white">padding i32(4x2)[HW]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePad, mobilenet_0_25_224_conv_pad_4_Pad_70069</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x57x57x32)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pad_6_Pad_70074 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x64)[NHWC]</TD><TD PORT="padding" BGCOLOR="white">padding i32(4x2)[HW]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePad, mobilenet_0_25_224_conv_pad_6_Pad_70074</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x29x29x64)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x1x1x256)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(1000x1x1x256)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(1000)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = NONE<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x1x1x1000)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x7x7x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(256x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(256)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x7x7x256)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x7x7x256)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(256x1x1x256)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(256)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x7x7x256)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x112x112x8)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(16x1x1x8)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(16)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x112x112x16)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x56x56x16)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(32x1x1x16)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x56x56x32)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x56x56x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(32x1x1x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(32)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x56x56x32)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x32)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(64x1x1x32)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x28x28x64)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x28x28x64)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(64x1x1x64)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(64)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x28x28x64)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x64)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x64)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x14x14x128)[NHWC]</TD><TD PORT="kernel" BGCOLOR="white">kernel i8(128x1x1x128)[OHWI]</TD><TD PORT="bias" BGCOLOR="white">bias i32(128)[C]</TD></TR>
+<TR><TD COLSPAN="3" BORDER="0">TFLiteQConv2dBias, mobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082<FONT POINT-SIZE="8"><BR/>
+depth_multiplier = 0<BR/>
+dilation_h = 1<BR/>
+dilation_w = 1<BR/>
+fused_activation = RELU6<BR/>
+is_depthwise = 0<BR/>
+padding = SAME<BR/>
+stride_h = 1<BR/>
+stride_w = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="3" BGCOLOR="white" PORT="out"> Output i8(1x14x14x128)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_global_average_pooling2d_Mean_70092 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x7x7x256)[NHWC]</TD><TD PORT="axes" BGCOLOR="white">axes i32(2)[C]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLiteMean, mobilenet_0_25_224_global_average_pooling2d_Mean_70092<FONT POINT-SIZE="8"><BR/>
+keep_dims = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x1x1x256)[NHWC]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_reshape_2_Reshape_70097 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="data" BGCOLOR="white">data i8(1x1x1x1000)[NHWC]</TD><TD PORT="shape" BGCOLOR="white">shape i32(2)[C]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">CanReshape, mobilenet_0_25_224_reshape_2_Reshape_70097</TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i8(1x1000)[HW]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_reshape_2_Reshape_shape_70096 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="in_0" BGCOLOR="white">in_0 i32(1)[x]</TD><TD PORT="in_1" BGCOLOR="white">in_1 i32(1)[x]</TD></TR>
+<TR><TD COLSPAN="2" BORDER="0">TFLitePack, mobilenet_0_25_224_reshape_2_Reshape_shape_70096<FONT POINT-SIZE="8"><BR/>
+axis = 0<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="2" BGCOLOR="white" PORT="out"> Output i32(2)[C]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_reshape_2_Shape_70094 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i8(1x1x1x1000)[NHWC]</TD></TR>
+<TR><TD COLSPAN="1" BORDER="0">TFLiteShape, mobilenet_0_25_224_reshape_2_Shape_70094</TD></TR>
+<TR><TD COLSPAN="1" BGCOLOR="white" PORT="out"> Output i32(4)[C]</TD></TR>
+</TABLE>>];graphmobilenet_0_25_224_reshape_2_strided_slice_70095 [shape=none, label=<<TABLE BGCOLOR="gray90">
+<TR><TD PORT="input" BGCOLOR="white">input i32(4)[C]</TD><TD PORT="begin" BGCOLOR="white">begin i32(1)[C]</TD><TD PORT="end" BGCOLOR="white">end i32(1)[C]</TD><TD PORT="strides" BGCOLOR="white">strides i32(1)[C]</TD></TR>
+<TR><TD COLSPAN="4" BORDER="0">TFLiteStridedSlice, mobilenet_0_25_224_reshape_2_strided_slice_70095<FONT POINT-SIZE="8"><BR/>
+begin_mask = 0<BR/>
+ellipsis_mask = 0<BR/>
+end_mask = 0<BR/>
+new_axis_mask = 0<BR/>
+shrink_axis_mask = 1<BR/>
+</FONT></TD></TR>
+<TR><TD COLSPAN="4" BGCOLOR="white" PORT="out"> Output i32(1)[x]</TD></TR>
+</TABLE>>];graphserving_default_input_1_0 [shape=none, label=<<TABLE BGCOLOR="coral" BORDER="2">
+<TR><TD BORDER="0">serving_default_input_1_0</TD></TR>
+<TR><TD PORT="out" BGCOLOR="white" BORDER="1">Output i8(1x224x224x3)[NHWC]</TD></TR>
+</TABLE>>];graphInt32VecConstant_70000_0:out:s -> graphmobilenet_0_25_224_conv_pad_12_Pad_70087:padding:n;
+graphInt32VecConstant_70000_1:out:s -> graphmobilenet_0_25_224_conv_pad_2_Pad_70064:padding:n;
+graphInt32VecConstant_70000_2:out:s -> graphmobilenet_0_25_224_conv_pad_4_Pad_70069:padding:n;
+graphInt32VecConstant_70000_3:out:s -> graphmobilenet_0_25_224_conv_pad_6_Pad_70074:padding:n;
+graphInt32VecConstant_70001:out:s -> graphmobilenet_0_25_224_global_average_pooling2d_Mean_70092:axes:n;
+graphInt32VecConstant_70002:out:s -> graphmobilenet_0_25_224_reshape_2_Reshape_shape_70096:in_1:n;
+graphInt32VecConstant_70003_0:out:s -> graphmobilenet_0_25_224_reshape_2_strided_slice_70095:end:n;
+graphInt32VecConstant_70003_1:out:s -> graphmobilenet_0_25_224_reshape_2_strided_slice_70095:strides:n;
+graphInt32VecConstant_70004:out:s -> graphmobilenet_0_25_224_reshape_2_strided_slice_70095:begin:n;
+graphInt32VecConstant_70005:out:s -> graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093:bias:n;
+graphInt32VecConstant_70007:out:s -> graphmobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091:bias:n;
+graphInt32VecConstant_70009:out:s -> graphmobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090:bias:n;
+graphInt32VecConstant_70011:out:s -> graphmobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089:bias:n;
+graphInt32VecConstant_70013:out:s -> graphmobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088:bias:n;
+graphInt32VecConstant_70015:out:s -> graphmobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086:bias:n;
+graphInt32VecConstant_70017:out:s -> graphmobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085:bias:n;
+graphInt32VecConstant_70019:out:s -> graphmobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084:bias:n;
+graphInt32VecConstant_70021:out:s -> graphmobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083:bias:n;
+graphInt32VecConstant_70023:out:s -> graphmobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082:bias:n;
+graphInt32VecConstant_70025:out:s -> graphmobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081:bias:n;
+graphInt32VecConstant_70027:out:s -> graphmobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080:bias:n;
+graphInt32VecConstant_70029:out:s -> graphmobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079:bias:n;
+graphInt32VecConstant_70031:out:s -> graphmobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078:bias:n;
+graphInt32VecConstant_70033:out:s -> graphmobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077:bias:n;
+graphInt32VecConstant_70035:out:s -> graphmobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076:bias:n;
+graphInt32VecConstant_70037:out:s -> graphmobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075:bias:n;
+graphInt32VecConstant_70039:out:s -> graphmobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073:bias:n;
+graphInt32VecConstant_70041:out:s -> graphmobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072:bias:n;
+graphInt32VecConstant_70043:out:s -> graphmobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071:bias:n;
+graphInt32VecConstant_70045:out:s -> graphmobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070:bias:n;
+graphInt32VecConstant_70047:out:s -> graphmobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068:bias:n;
+graphInt32VecConstant_70049:out:s -> graphmobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067:bias:n;
+graphInt32VecConstant_70051:out:s -> graphmobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066:bias:n;
+graphInt32VecConstant_70053:out:s -> graphmobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065:bias:n;
+graphInt32VecConstant_70055:out:s -> graphmobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063:bias:n;
+graphInt32VecConstant_70057:out:s -> graphmobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062:bias:n;
+graphInt32VecConstant_70059:out:s -> graphmobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061:bias:n;
+graphInt8VecConstant_70006:out:s -> graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093:kernel:n;
+graphInt8VecConstant_70008:out:s -> graphmobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091:kernel:n;
+graphInt8VecConstant_70010:out:s -> graphmobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090:kernel:n;
+graphInt8VecConstant_70012:out:s -> graphmobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089:kernel:n;
+graphInt8VecConstant_70014:out:s -> graphmobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088:kernel:n;
+graphInt8VecConstant_70016:out:s -> graphmobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086:kernel:n;
+graphInt8VecConstant_70018:out:s -> graphmobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085:kernel:n;
+graphInt8VecConstant_70020:out:s -> graphmobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084:kernel:n;
+graphInt8VecConstant_70022:out:s -> graphmobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083:kernel:n;
+graphInt8VecConstant_70024:out:s -> graphmobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082:kernel:n;
+graphInt8VecConstant_70026:out:s -> graphmobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081:kernel:n;
+graphInt8VecConstant_70028:out:s -> graphmobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080:kernel:n;
+graphInt8VecConstant_70030:out:s -> graphmobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079:kernel:n;
+graphInt8VecConstant_70032:out:s -> graphmobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078:kernel:n;
+graphInt8VecConstant_70034:out:s -> graphmobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077:kernel:n;
+graphInt8VecConstant_70036:out:s -> graphmobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076:kernel:n;
+graphInt8VecConstant_70038:out:s -> graphmobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075:kernel:n;
+graphInt8VecConstant_70040:out:s -> graphmobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073:kernel:n;
+graphInt8VecConstant_70042:out:s -> graphmobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072:kernel:n;
+graphInt8VecConstant_70044:out:s -> graphmobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071:kernel:n;
+graphInt8VecConstant_70046:out:s -> graphmobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070:kernel:n;
+graphInt8VecConstant_70048:out:s -> graphmobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068:kernel:n;
+graphInt8VecConstant_70050:out:s -> graphmobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067:kernel:n;
+graphInt8VecConstant_70052:out:s -> graphmobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066:kernel:n;
+graphInt8VecConstant_70054:out:s -> graphmobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065:kernel:n;
+graphInt8VecConstant_70056:out:s -> graphmobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063:kernel:n;
+graphInt8VecConstant_70058:out:s -> graphmobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062:kernel:n;
+graphInt8VecConstant_70060:out:s -> graphmobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061:kernel:n;
+graphStatefulPartitionedCall_0_70098:out:s -> graphGraphOutputs:StatefulPartitionedCall_0_70098:n;
+graphmobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061:out:s -> graphmobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062:input:n;
+graphmobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083:out:s -> graphmobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084:input:n;
+graphmobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085:out:s -> graphmobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086:input:n;
+graphmobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088:out:s -> graphmobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089:input:n;
+graphmobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090:out:s -> graphmobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091:input:n;
+graphmobilenet_0_25_224_conv_dw_1_relu_Relu6_mobilenet_0_25_224_conv_dw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_70062:out:s -> graphmobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063:input:n;
+graphmobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065:out:s -> graphmobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066:input:n;
+graphmobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067:out:s -> graphmobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068:input:n;
+graphmobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070:out:s -> graphmobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071:input:n;
+graphmobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072:out:s -> graphmobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073:input:n;
+graphmobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075:out:s -> graphmobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076:input:n;
+graphmobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077:out:s -> graphmobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078:input:n;
+graphmobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079:out:s -> graphmobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080:input:n;
+graphmobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081:out:s -> graphmobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082:input:n;
+graphmobilenet_0_25_224_conv_pad_12_Pad_70087:out:s -> graphmobilenet_0_25_224_conv_dw_12_relu_Relu6_mobilenet_0_25_224_conv_dw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_70088:input:n;
+graphmobilenet_0_25_224_conv_pad_2_Pad_70064:out:s -> graphmobilenet_0_25_224_conv_dw_2_relu_Relu6_mobilenet_0_25_224_conv_dw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_70065:input:n;
+graphmobilenet_0_25_224_conv_pad_4_Pad_70069:out:s -> graphmobilenet_0_25_224_conv_dw_4_relu_Relu6_mobilenet_0_25_224_conv_dw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_70070:input:n;
+graphmobilenet_0_25_224_conv_pad_6_Pad_70074:out:s -> graphmobilenet_0_25_224_conv_dw_6_relu_Relu6_mobilenet_0_25_224_conv_dw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_70075:input:n;
+graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093:out:s -> graphmobilenet_0_25_224_reshape_2_Reshape_70097:data:n;
+graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093:out:s -> graphmobilenet_0_25_224_reshape_2_Shape_70094:input:n;
+graphmobilenet_0_25_224_conv_pw_10_relu_Relu6_mobilenet_0_25_224_conv_pw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_10_Conv2D_70084:out:s -> graphmobilenet_0_25_224_conv_dw_11_relu_Relu6_mobilenet_0_25_224_conv_dw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_11_depthwise_70085:input:n;
+graphmobilenet_0_25_224_conv_pw_11_relu_Relu6_mobilenet_0_25_224_conv_pw_11_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_11_Conv2D_70086:out:s -> graphmobilenet_0_25_224_conv_pad_12_Pad_70087:input:n;
+graphmobilenet_0_25_224_conv_pw_12_relu_Relu6_mobilenet_0_25_224_conv_pw_12_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_pw_12_Conv2D_70089:out:s -> graphmobilenet_0_25_224_conv_dw_13_relu_Relu6_mobilenet_0_25_224_conv_dw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_mobilenet_0_25_224_conv_dw_13_depthwise_70090:input:n;
+graphmobilenet_0_25_224_conv_pw_13_relu_Relu6_mobilenet_0_25_224_conv_pw_13_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_pw_13_Conv2D_70091:out:s -> graphmobilenet_0_25_224_global_average_pooling2d_Mean_70092:input:n;
+graphmobilenet_0_25_224_conv_pw_1_relu_Relu6_mobilenet_0_25_224_conv_pw_1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_2_depthwise_mobilenet_0_25_224_conv_pw_1_Conv2D_70063:out:s -> graphmobilenet_0_25_224_conv_pad_2_Pad_70064:input:n;
+graphmobilenet_0_25_224_conv_pw_2_relu_Relu6_mobilenet_0_25_224_conv_pw_2_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_2_Conv2D_70066:out:s -> graphmobilenet_0_25_224_conv_dw_3_relu_Relu6_mobilenet_0_25_224_conv_dw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_dw_3_depthwise_70067:input:n;
+graphmobilenet_0_25_224_conv_pw_3_relu_Relu6_mobilenet_0_25_224_conv_pw_3_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_4_depthwise_mobilenet_0_25_224_conv_pw_3_Conv2D_70068:out:s -> graphmobilenet_0_25_224_conv_pad_4_Pad_70069:input:n;
+graphmobilenet_0_25_224_conv_pw_4_relu_Relu6_mobilenet_0_25_224_conv_pw_4_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_4_Conv2D_70071:out:s -> graphmobilenet_0_25_224_conv_dw_5_relu_Relu6_mobilenet_0_25_224_conv_dw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_5_depthwise_mobilenet_0_25_224_conv_dw_6_depthwise_70072:input:n;
+graphmobilenet_0_25_224_conv_pw_5_relu_Relu6_mobilenet_0_25_224_conv_pw_5_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_6_depthwise_mobilenet_0_25_224_conv_pw_5_Conv2D_70073:out:s -> graphmobilenet_0_25_224_conv_pad_6_Pad_70074:input:n;
+graphmobilenet_0_25_224_conv_pw_6_relu_Relu6_mobilenet_0_25_224_conv_pw_6_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_6_Conv2D_70076:out:s -> graphmobilenet_0_25_224_conv_dw_7_relu_Relu6_mobilenet_0_25_224_conv_dw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_7_depthwise_70077:input:n;
+graphmobilenet_0_25_224_conv_pw_7_relu_Relu6_mobilenet_0_25_224_conv_pw_7_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_7_Conv2D_70078:out:s -> graphmobilenet_0_25_224_conv_dw_8_relu_Relu6_mobilenet_0_25_224_conv_dw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_8_depthwise_70079:input:n;
+graphmobilenet_0_25_224_conv_pw_8_relu_Relu6_mobilenet_0_25_224_conv_pw_8_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_8_Conv2D_70080:out:s -> graphmobilenet_0_25_224_conv_dw_9_relu_Relu6_mobilenet_0_25_224_conv_dw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_9_depthwise_70081:input:n;
+graphmobilenet_0_25_224_conv_pw_9_relu_Relu6_mobilenet_0_25_224_conv_pw_9_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_pw_9_Conv2D_70082:out:s -> graphmobilenet_0_25_224_conv_dw_10_relu_Relu6_mobilenet_0_25_224_conv_dw_10_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_12_depthwise_mobilenet_0_25_224_conv_dw_10_depthwise_70083:input:n;
+graphmobilenet_0_25_224_global_average_pooling2d_Mean_70092:out:s -> graphmobilenet_0_25_224_conv_preds_BiasAdd_mobilenet_0_25_224_conv_preds_Conv2D_mobilenet_0_25_224_conv_preds_BiasAdd_ReadVariableOp_70093:input:n;
+graphmobilenet_0_25_224_reshape_2_Reshape_70097:out:s -> graphStatefulPartitionedCall_0_70098:input:n;
+graphmobilenet_0_25_224_reshape_2_Reshape_shape_70096:out:s -> graphmobilenet_0_25_224_reshape_2_Reshape_70097:shape:n;
+graphmobilenet_0_25_224_reshape_2_Shape_70094:out:s -> graphmobilenet_0_25_224_reshape_2_strided_slice_70095:input:n;
+graphmobilenet_0_25_224_reshape_2_strided_slice_70095:out:s -> graphmobilenet_0_25_224_reshape_2_Reshape_shape_70096:in_0:n;
+graphserving_default_input_1_0:out:s -> graphmobilenet_0_25_224_conv1_relu_Relu6_mobilenet_0_25_224_conv1_bn_FusedBatchNormV3_mobilenet_0_25_224_conv_dw_1_depthwise_mobilenet_0_25_224_conv1_Conv2D_70061:input:n;
+}}
