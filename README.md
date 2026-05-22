@@ -20,11 +20,16 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 
 ![RZ/G3E Application Flow](docs/assets/g3e_workflow.gif)
 
+## Supported AI model
+- TensorFlow Lite/INT8
+
+The current version is the 1st release of RHUMI for RZ/G3E. The supported framework has been limited.
+
 ## Quick Start
 
 This provides to steps to make the environment to run RUHMI AI model compiler and to convert AI model on Linux host. The fastest path to first output is:  
 
-1. Build the RUHMI Docker image from `scripts/Dockerfile`.
+1. Build the RUHMI Docker image from [Dockerfile](./scripts/Dockerfile).
 2. Run the container with a host workspace mounted to `/shared`.
 3. Place one or more `.tflite` models in the mounted workspace.
 4. Run `generate-model-data.py` in the container to compile models and generate I/O binaries.
@@ -49,14 +54,12 @@ docker run --rm -it \
   ruhmi-env
 ```
 
-Generate model data:
-
+Compile AI mode:
 ```bash
 python3 /generate-model-data.py \
   -d models_to_deploy \
   -m model_1.tflite model_2.tflite
 ```
-
 For full details, see:
 - [Dockerfile and the script to run](scripts/README.md)
 - [Guide for Dockerfile](docs/dockerfile.md)
