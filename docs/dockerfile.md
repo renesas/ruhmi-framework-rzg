@@ -1,4 +1,4 @@
-# `Dockerfile` Guide
+# Dockerfile Guide
 
 ## Overview
 `scripts/Dockerfile` builds an Ubuntu 22.04-based environment for compiling TFLite models with RUHMI (MERA) and running `generate-model-data.py`.
@@ -14,12 +14,12 @@ The image includes:
 
 ## Main Build Steps
 1. Start from `ubuntu:22.04`
-1. Install core development and utility packages via `apt`
-1. Add PPA and install MERA dependencies plus Python 3.10 packages
-1. Download and install MERA x86 wheel from GitHub
-1. Upgrade `pip`, then install TensorFlow, Vela, and LiteRT
-1. Copy `generate-model-data.py` into the container root (`/generate-model-data.py`)
-1. Create a non-root user matching host UID/GID and switch to that user
+2. Install core development and utility packages via `apt`
+3. Add PPA and install MERA dependencies plus Python 3.10 packages
+4. Download and install MERA x86 wheel from GitHub
+5. Upgrade `pip`, then install TensorFlow, Vela, and LiteRT
+6. Copy `generate-model-data.py` into the container root (`/generate-model-data.py`)
+7. Create a non-root user matching host UID/GID and switch to that user
 
 ## Build Arguments
 You can pass the following args to `docker build`:

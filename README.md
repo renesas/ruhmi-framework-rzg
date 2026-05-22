@@ -22,7 +22,7 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 
 ## Quick Start
 
-The fastest path to first output is:
+This provides to steps to make the environment to run RUHMI AI model compiler and to convert AI model on Linux host. The fastest path to first output is:  
 
 1. Build the RUHMI Docker image from `scripts/Dockerfile`.
 2. Run the container with a host workspace mounted to `/shared`.
@@ -58,9 +58,9 @@ python3 /generate-model-data.py \
 ```
 
 For full details, see:
-- [scripts/README.md](scripts/README.md)
-- [Dockerfile guide](docs/dockerfile.md)
-- [generate-model-data guide](docs/generate-model-data.md)
+- [Dockerfile and the script to run](scripts/README.md)
+- [Guide for Dockerfile](docs/dockerfile.md)
+- [Guide for Model conversion Script](docs/generate-model-data.md)
 
 ## Repository Layout
 
@@ -85,5 +85,3 @@ For full details, see:
 
 See [LICENSE.md](LICENSE.md).
 
-
-[def]: doc/as

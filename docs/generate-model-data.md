@@ -1,4 +1,4 @@
-# `generate-model-data.py` Guide
+# model compilation script Guide
 
 ## Overview
 `generate-model-data.py` compiles one or more TFLite models with RUHMI (MERA) and generates inference test data.
@@ -9,6 +9,9 @@ It automates the following steps:
 1. Generate randomized sample inputs (`input-*.bin`) based on model input tensor metadata
 1. Run inference and save expected outputs (`expected-output-*.bin`)
 1. Generate a `config.yaml` file for runtime execution
+
+If the compilation completes successfully, you will see the following.
+![](../docs/assets/Conversion_success.gif)
 
 ## Usage
 ```bash

@@ -7,11 +7,6 @@ This directory contains sample AI applications for Renesas RZ/G3E using the RUHM
 - [Image Classification](image_classification/README.md)
 - [Face Detection](face_detection/README.md)
 
-## Repository Scope
-
-This repository currently provides documentation only for the example applications.
-Application binaries (`exe/`) and source trees (`src/`) are distributed in the RZ/G3E release package, not in this repository.
-
 ## Target Environment
 
 - Board: [RZ/G3E-EVKIT](https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit)
