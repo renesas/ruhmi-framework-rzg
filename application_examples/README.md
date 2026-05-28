@@ -42,6 +42,17 @@ Please prepare the following hardware equipment.
 |Linux PC (Ubuntu)|	Optional: Used for setting up microSD card instead of a Windows PC.Recommended: Ubuntu 22.04 LTS (64 bit)|
 |Windows PC(optional) |Used for  a serial terminal connection (e.g. TeraTerm) |
 
+## Necessary Software  
+This document explains how to run the application with using the prebuild binary provided by [the Linux/Ethos support package](). After downloading it in your host, you can see the binary files to be stored in SD card for booting used as follows.
+
+```
+/Images_RZG3E_v1.0.0  
+  /core-image-weston-smarc-rzg3e.rootfs.wic.bmap  
+  /core-image-weston-smarc-rzg3e.rootfs.wic.gz  
+```
+
+This repository use the pre-bult binary to run the application. In case you build the envronment by yourself on the target board, you can refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) . 
+
 
 ## 2. Prepare SD Card in Linux
 This section explains how to prepare SD card for Linux booting on EK-RZ/G3E. Installing the Linux image into SD card as following.

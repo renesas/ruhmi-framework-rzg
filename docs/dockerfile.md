@@ -29,7 +29,7 @@ sudo docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t ruhmi-env
 sudo docker run --rm -it -v /path/to/shared:/shared -w /shared ruhmi-env
 ```
 
-> [NOTE]
+> [NOTE]  
 >Update */path/to/shared* path to the directory used for storing models.
 
 The console should appear with user user and a different hostname as shown below.
@@ -37,7 +37,7 @@ The console should appear with user user and a different hostname as shown below
 user@5c0832859d04:/shared$
 ```
 
-> [NOTE]
+> [NOTE]  
 > - The MERA wheel URL is pinned to a specific GitHub commit. If the URL becomes invalid, update it.
 > - The Dockerfile uses `adduser --gid ${UID}`. In many setups, `--gid ${GID}` is more typical (if `UID == GID`, this often still works).
 - `generate-model-data.py` must exist in the build context (for this Dockerfile, the `scripts` directory).
