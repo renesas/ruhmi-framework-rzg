@@ -3,9 +3,6 @@
 ## Overview
 `generate-model-data.py` compiles TFLite model with RUHMI AI model compiler.
 
-If the compilation completes successfully, you will see the following.
-![](../docs/assets/Conversion_success.gif)
-
 1. Copy the model file to the shared directory being used by the Docker container.  
 2. Compile the model with RUHMI.  
 
@@ -16,6 +13,9 @@ python3 /generate-model-data.py -d model_deployment_dir -m mobilenet_v2_1.0_224_
 > Remember to replace *mobilenet_v2_1.0_224_INT8.tflite* with the correct filepath of the model.
 > If RUHMI is being used natively, please update the command to use the path to the *generate-model-data.py script*.
 > Feel free to use a different output directory name instead of *model_deployment_dir*.
+
+If the compilation completes successfully, you will see the following.
+![](../docs/assets/Conversion_success.gif)
 
 ## Output Directory Structure
 The script creates one directory per model plus a top-level `config.yaml`.
