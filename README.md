@@ -20,53 +20,26 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 
 ![RZ/G3E Application development flow](docs/assets/g3e_workflow.gif)
 
+## Supported Embedded Platforms
+- Renesas MPU RZ/G3E
+
 ## Supported AI model
 - TensorFlow Lite/INT8
 
 The current version is the 1st release of RHUMI for RZ/G3E. The supported framework has been limited.
 
-## Quick Start
+## Installation and compilation
+1. Build the envronment and install RUHMI AI model compiler  
+- [Use Dockerfile](docs/dockerfile.md)  
+2. Cimpilae tha target model
+- [Use the compilation Script](docs/generate-model-data.md)
 
-This provides to steps to make the environment to run RUHMI AI model compiler and to convert AI model on Linux host. The fastest path to first output is:  
-
-1. Build the RUHMI Docker image from [Dockerfile](./scripts/Dockerfile).
-2. Run the container with a host workspace mounted to `/shared`.
-3. Place one or more `.tflite` models in the mounted workspace.
-4. Run `generate-model-data.py` in the container to compile models and generate I/O binaries.
-
-Build image:
-
-```bash
-docker build \
-  --build-arg UID=$(id -u) \
-  --build-arg GID=$(id -g) \
-  -t ruhmi-env \
-  -f scripts/Dockerfile \
-  scripts
-```
-
-Run container:
-
-```bash
-docker run --rm -it \
-  -v /path/to/work:/shared \
-  -w /shared \
-  ruhmi-env
-```
-
-Compile AI mode:
-```bash
-python3 /generate-model-data.py \
-  -d models_to_deploy \
-  -m model_1.tflite model_2.tflite
-```
-For full details, see:
-- [Dockerfile and the script to run](scripts/README.md)
-- [Guide for Dockerfile](docs/dockerfile.md)
-- [Guide for Model compilation Script](docs/generate-model-data.md)
+## Application Examples
+- [Common preparation to run](application_examples/README.md)
+- [Image Classification](application_examples/image_classification/README.md)
+- [Face Detection](application_examples/face_detection/README.md)
 
 ## Repository Layout
-
 - `application_examples/`: runnable sample apps and app-specific docs for RZ/G3E
 - `docs/`: supporting documentation and documentation assets
 - `install/`: MERA/RUHMI install artifacts (wheel files, shared libraries) and setup guide
@@ -74,16 +47,6 @@ For full details, see:
 - `requirements-host.txt`: host-side Python dependency list
 - `README.md`: repository entry point
 - `LICENSE.md`: license terms
-
-## Application Examples
-
-- [Common preparation](application_examples/README.md)
-- [Image Classification](application_examples/image_classification/README.md)
-- [Face Detection](application_examples/face_detection/README.md)
-
-## Supported Embedded Platforms
-
-- Renesas MPU RZ/G3E
 
 ## License
 
