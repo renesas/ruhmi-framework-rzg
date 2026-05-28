@@ -1,16 +1,7 @@
 # Dockerfile Guide
 
 ## Overview
-`scripts/Dockerfile` builds an Ubuntu 22.04-based environment for compiling TFLite models with RUHMI (MERA) and running `generate-model-data.py`.
-
-The image includes:
-- Build tools (`build-essential`, `cmake`, etc.)
-- Python 3.10 + pip
-- MERA x86 wheel (`mera-2.5.0+pkg.3782`)
-- TensorFlow 2.17.0
-- Ethos-U Vela 4.0.0
-- LiteRT (`ai-edge-litert==2.1.2`)
-- `/generate-model-data.py`
+`scripts/Dockerfile` builds an Ubuntu 22.04-based environment for compiling TFLite models with RUHMI AI model compiler and running `generate-model-data.py` whcih is the script to compile the target model.
 
 ## Main Build Steps
 1. Start from `ubuntu:22.04`
@@ -33,29 +24,22 @@ This helps avoid file permission issues when mounting host directories into the 
 
 ## Build Example
 ```bash
-docker build \
-  --build-arg UID=$(id -u) \
-  --build-arg GID=$(id -g) \
-  -t ruhmi-env \
-  -f scripts/Dockerfile \
-  scripts
+cd ~/ruhmi-framework-rzg/scripts/
+sudo docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t ruhmi-env
+sudo docker run --rm -it -v /path/to/shared:/shared -w /shared ruhmi-env
 ```
 
-## Run Example
-```bash
-docker run --rm -it \
-  -v /path/to/work:/shared \
-  -w /shared \
-  ruhmi-env
+> [NOTE]
+>Update */path/to/shared* path to the directory used for storing models.
+
+The console should appear with user user and a different hostname as shown below.
+```
+user@5c0832859d04:/shared$
 ```
 
-Run model data generation after container startup:
-```bash
-python3 /generate-model-data.py -d models_to_deploy -m model.tflite
-```
-
-## Notes
-- The MERA wheel URL is pinned to a specific GitHub commit. If the URL becomes invalid, update it.
-- The Dockerfile uses `adduser --gid ${UID}`. In many setups, `--gid ${GID}` is more typical (if `UID == GID`, this often still works).
+> [NOTE]
+> - The MERA wheel URL is pinned to a specific GitHub commit. If the URL becomes invalid, update it.
+> - The Dockerfile uses `adduser --gid ${UID}`. In many setups, `--gid ${GID}` is more typical (if `UID == GID`, this often still works).
 - `generate-model-data.py` must exist in the build context (for this Dockerfile, the `scripts` directory).
+
 

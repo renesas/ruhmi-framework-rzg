@@ -173,5 +173,7 @@ you can run the command on the terminal console as following.
 ./image_classification USB
 ```
 
-You can also refer each fuicance by application example.
+You can also refer each guidance to run it.
+- [Image Classification](image_classification/README.md)
+- [Face Detection](face_detection/README.md)
 

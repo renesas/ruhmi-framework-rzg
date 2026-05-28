@@ -6,7 +6,7 @@
 [![Status](https://img.shields.io/badge/Status-Under%20Construction-orange.svg)](#project-status)
 
 RUHMI (Robust Unified Heterogeneous Model Integration) provides an AI model compiler workflow for Renesas RZ/G3E.  
-This repository includes installation assets, model deployment scripts, and application examples.
+This repository includes installation assets, model compilation scripts, and application examples.
 
 ## Overview
 
@@ -18,7 +18,7 @@ The AI compiler stack is powered by EdgeCortix® MERA™.
 
 This repository provides the guidance for how to use RUHMI AI model compiler. Also provides some application examples with the the guidance for how to run on EK-RZ/G3E board.
 
-![RZ/G3E Application Flow](docs/assets/g3e_workflow.gif)
+![RZ/G3E Application development flow](docs/assets/g3e_workflow.gif)
 
 ## Supported AI model
 - TensorFlow Lite/INT8
@@ -63,7 +63,7 @@ python3 /generate-model-data.py \
 For full details, see:
 - [Dockerfile and the script to run](scripts/README.md)
 - [Guide for Dockerfile](docs/dockerfile.md)
-- [Guide for Model conversion Script](docs/generate-model-data.md)
+- [Guide for Model compilation Script](docs/generate-model-data.md)
 
 ## Repository Layout
 
@@ -77,6 +77,7 @@ For full details, see:
 
 ## Application Examples
 
+- [Common preparation](application_examples/README.md)
 - [Image Classification](application_examples/image_classification/README.md)
 - [Face Detection](application_examples/face_detection/README.md)
 
