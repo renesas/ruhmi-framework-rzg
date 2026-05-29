@@ -51,7 +51,10 @@ This repository provide the simpliped expanation. You can also refer to [Renesas
 - `README.md`: repository entry point
 - `LICENSE.md`: license terms
 
-## License
+## Neeccsary software 
+The generated binary with RUHMI AI model copiler works on [RZ/G3E Ethos Support Package](https://www.renesas.com/ja/software-tool/rzg3e-ethos-support-package).
+You need to get the software package from Renesas.com.
 
+## License
 See [LICENSE.md](LICENSE.md).
 

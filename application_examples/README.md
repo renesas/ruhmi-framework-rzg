@@ -43,7 +43,7 @@ Please prepare the following hardware equipment.
 |Windows PC(optional) |Used for  a serial terminal connection (e.g. TeraTerm) |
 
 ## Necessary Software  
-This document explains how to run the application with using the prebuild binary provided by [the Linux/Ethos support package](). After downloading it in your host, you can see the binary files to be stored in SD card for booting used as follows.
+This document explains how to run the application with using the pre-build binary provided by [RZ/G3E Ethos v3.0 Prebuilt Binaries](https://www.renesas.com/en/document/sws/rzg3e-ethos-v30-rc1-prebuilt-binaries?r=25612558). After downloading it in your host, you can see the binary files to be stored in SD card for booting used as follows.
 
 ```
 /Images_RZG3E_v1.0.0  
@@ -52,6 +52,7 @@ This document explains how to run the application with using the prebuild binary
 ```
 
 This repository use the pre-bult binary to run the application. In case you build the envronment by yourself on the target board, you can refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) . 
+The software can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
 
 
 ## 2. Prepare SD Card in Linux
