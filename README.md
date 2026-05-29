@@ -26,7 +26,7 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 ## Supported AI model
 - TensorFlow Lite/INT8
 
-The current version is the 1st release of RHUMI for RZ/G3E. The supported framework has been limited.
+The current version is the 1st release of RHUMI for RZ/G3E. The supported AI model is limited within 16MB.
 
 ## Installation and compilation
 1. Build the envronment and install RUHMI AI model compiler  
