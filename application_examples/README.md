@@ -2,6 +2,10 @@
 
 This directory contains sample AI applications for Renesas RZ/G3E using the RUHMI AI Framework runtime.
 
+The guidance below uses the pre-buld binaries to run the application. The software package providing the pre-build binaries can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
+also, in case you build the envronment by yourself on the target board, you need to get [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package). You can also refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) for more detail understanding. 
+
+
 ## Included Examples
 - [Image Classification](image_classification/README.md)
 - [Face Detection](face_detection/README.md)
@@ -50,10 +54,6 @@ This document explains how to run the application with using the pre-build binar
   /core-image-weston-smarc-rzg3e.rootfs.wic.bmap  
   /core-image-weston-smarc-rzg3e.rootfs.wic.gz  
 ```
-
-This repository use the pre-bult binary to run the application. In case you build the envronment by yourself on the target board, you can refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) . 
-The software can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
-
 
 ## 2. Prepare SD Card in Linux
 This section explains how to prepare SD card for Linux booting on EK-RZ/G3E. Installing the Linux image into SD card as following.
