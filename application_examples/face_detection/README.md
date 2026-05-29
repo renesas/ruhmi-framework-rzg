@@ -84,4 +84,4 @@ Expected output includes model info, FPS, and number of faces detected.
 
 - FPS values are reference values only.
 - Press `Enter` in the running console to terminate the app.
-- Refer to `LICENSE.md` in the repository root for license information.
+- Refer to [LICENSE](../../LICENSE.md) in the repository root for license information.
