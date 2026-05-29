@@ -12,7 +12,7 @@ This repository includes installation assets, model compilation scripts, and app
 
 RUHMI Framework provides tools to compile machine learning models into deployment artifacts compatible with RZ/G3E.
 
-The AI compiler stack is powered by EdgeCortix® MERA™.
+**The AI compiler stack is powered by EdgeCortix® MERA™.**
 
 ## Workflow
 
