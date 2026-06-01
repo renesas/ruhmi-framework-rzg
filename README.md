@@ -52,8 +52,8 @@ This repository provide the simpliped expanation. You can also refer to [Renesas
 - `LICENSE.md`: license terms
 
 ## Related software and information
- [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
- [Renesas RZ/G3E NPU (Ethos-U55) Support](https://renesas-rz.github.io/rz-ethos-u-docs/)
+ [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).  
+ [Renesas RZ/G3E NPU (Ethos-U55) Support](https://renesas-rz.github.io/rz-ethos-u-docs/)  
 
 ## License
 See [LICENSE.md](LICENSE.md).
