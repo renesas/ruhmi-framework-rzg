@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-LICENSE.md-blue.svg)](LICENSE.md)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg)](install/README.md#host-environment-setup)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](#quick-start)
-[![Status](https://img.shields.io/badge/Status-Under%20Construction-orange.svg)](#project-status)
+
 
 RUHMI (Robust Unified Heterogeneous Model Integration) provides an AI model compiler workflow for Renesas RZ/G3E.  
 This repository includes installation assets, model compilation scripts, and application examples.
@@ -22,6 +22,14 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 
 ## Supported Embedded Platforms
 - Renesas MPU RZ/G3E
+
+>[NOTE]  
+>The board currently on sale includes V1 device which does not support Ethos operation using LPDDR4/4X. Production is underway for the board with V2 sample, with stock expected to arrive at the end of June. To identify which sample is installed on an board, check the S.LOT No. printed on the board box.   
+>　Less than 0000300000: V1 sample installed  
+>　0000300000 or later: V2 sample installed    
+>   [Lot No. placement](./docs/assets/lot_no.png)
+
+
 
 ## Supported AI model
 - TensorFlow Lite/INT8
