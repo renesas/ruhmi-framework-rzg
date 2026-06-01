@@ -25,22 +25,27 @@ System configuration:
 
 ## Directory Structure
 
-```text
+```
 .
-  README.md
-    exe/
-    src/
+├── README.md                           // This document
+├── exe
+│   ├── face_detection                  // Application binary
+│   └── model_yolo-fastest              // AI model directory, compiled using the RUHMI AI Framework
+│          ├── config.yaml
+│          └── yolo-fastest_192_face_v4
+└── src	                                // Application source code
 ```
 
 `exe/` and `src/` are not included in this repository. Use the RZ/G3E release package for runnable assets.
 
 ## Model Information
 
-| Model | Input | Output |
-| --- | --- | --- |
-| yolo-fastest_192_face_v4.tflite | int8[1,192,192,1] | int8[1,6,6,18], int8[1,12,12,18] |
+| AI Model  | Input size  | Output size   |
+| ----- | ---------- | ---- |
+| [yolo-fastest_192_face_v4.tflite](https://github.com/emza-vs/ModelZoo/tree/master) |  int8 [1,192,192,1] | int8[1,6,6,18]<br>int8[1,12,12,18] |
 
-Reference model source: https://github.com/emza-vs/ModelZoo/tree/master
+- [Model reference](https://github.com/renesas/ruhmi-framework-mcu/tree/main/application_examples/face_detection#model-reference)
+
 
 ## Build
 

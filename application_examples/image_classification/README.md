@@ -24,21 +24,30 @@ System configuration:
 
 ## Directory Structure
 
-```text
+```
 .
-  README.md
-  (in release package)
-    exe/
-    src/
+├── README.md                         // This document
+├── exe
+│      ├── image_classification       // Application binary
+│      ├── labels_mobilenet_v1.txt    // Label file for classification results
+│      └── model_movilenetv1		      // AI model directory, compiled using the RUHMI AI Framework
+│          ├── config.yaml
+│          └── mobilenet_v1_0.25
+└── src                               // Application source code
 ```
 
 `exe/` and `src/` are not included in this repository. Use the RZ/G3E release package for runnable assets.
 
 ## Model Information
 
-| Model | Input | Output |
-| --- | --- | --- |
-| MobileNet V1 | int8[1,224,224,3] | int8[1,1000] |
+| AI Model     | Input size            | Output size   |
+| ------------ | --------------------- | ------------- | 
+| MobileNet V1 |  int8[1, 224, 224, 3] | int8[1, 1000] |
+
+The model outputs classification scores for 1,000 categories.
+
+- [Model reference](https://github.com/renesas/ruhmi-framework-mcu/tree/main/application_examples/image_classification#model-reference)
+
 
 ## Build
 
