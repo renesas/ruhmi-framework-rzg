@@ -16,7 +16,7 @@ RUHMI Framework provides tools to compile machine learning models into deploymen
 
 ## Workflow
 
-This repository provides the guidance for how to use RUHMI AI model compiler. Also provides some application examples with the the guidance for how to run on EK-RZ/G3E board.
+This repository provides the guidance for how to use RUHMI AI model compiler. Also provides some application examples with the the guidance for how to run on RZ/G3E-EVKIT.
 
 ![RZ/G3E Application development flow](docs/assets/g3e_workflow.gif)
 

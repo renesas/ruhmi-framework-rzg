@@ -11,7 +11,7 @@ The model is compiled with the RUHMI AI Framework and executed with Ethos-U55 ac
 
 ## Target Environment
 
-- Board: RZ/G3E EVK
+- Board: RZ/G3E-EVKIT
 - Software: RZ/G3E Ethos-U Package (including RUHMI runtime)
 - Peripherals:
   - USB camera
@@ -67,7 +67,7 @@ Generated binary: `src/build/image_classification`
 
 ## Run
 
-Copy files to board:
+Copy files to RZ/G3E-EVKIT:
 
 ```bash
 scp -r exe/ root@<TARGET_IP>:/home/root/

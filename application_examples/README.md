@@ -3,7 +3,7 @@
 This directory contains sample AI applications for Renesas RZ/G3E using the RUHMI AI Framework runtime.
 
 The guidance below uses the pre-buld binaries to run the application. The software package providing the pre-build binaries can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
-also, in case you build the envronment by yourself on the target board, you need to get [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package). You can also refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) for more detail understanding. 
+also, in case you build the envronment by yourself on RZ/G3E-EVKIT, you need to get [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package). You can also refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) for more detail understanding. 
 
 
 ## Included Examples
@@ -36,7 +36,7 @@ This section shows **the common procedure** to run the application example which
 Please prepare the following hardware equipment.
 | Equipment	| Details |
 | --- | ---| 
-| RZ/G3E SMARC EVK | Evaluation Board Kit for RZ/G3E. Includes the microUSB to serial cable for serial communication. |
+| RZ/G3E-EVKIT | Evaluation Board Kit for RZ/G3E. Includes the microUSB to serial cable for serial communication. |
 | USB Type-C Power Supply | 65W rated PD power supply to power the board.|
 | USB Cable Type-C | 65W rated USB Type-C cable used to connect the power supply to the board. |
 | HDMI Display | Used to display graphics of the board |
@@ -114,7 +114,7 @@ sync
 sudo umount /mnt/sd
 sudo eject /dev/sdb
 ```
-## 4. Run the application with Linux on EK-RZ/G3E board
+## 4. Run the application with Linux on RZ/G3E-EVKIT
 
 ### Boot Procedure
 
@@ -146,7 +146,7 @@ eSD Boot Mode setting
 >Parity = none  
 >Flow control = off  
 
-4. Power ON the board by pressing the POWER button for at least 1 second.  
+4. Power ON RZ/G3E-EVKIT by pressing the POWER button for at least 1 second.  
 **Powering with LED status**  
 ![](../docs/assets/Powering.gif)
 
@@ -165,7 +165,7 @@ Saving Environment to MMC... Writing to MMC(0)... OK
 =>
 ```
 
-7.	Reboot the board by pressing the RESET button.
+7.	Reboot RZ/G3E-EVKIT by pressing the RESET button.
 Since the U-Boot environment is saved, autoboot no longer needs to be stopped in the future.
 
 8.	Once Linux has booted up, login with `root` (no password).
