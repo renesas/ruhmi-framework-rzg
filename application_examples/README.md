@@ -46,6 +46,9 @@ Please prepare the following hardware equipment.
 |Linux PC (Ubuntu)|	Optional: Used for setting up microSD card instead of a Windows PC.Recommended: Ubuntu 22.04 LTS (64 bit)|
 |Windows PC(optional) |Used for  a serial terminal connection (e.g. TeraTerm) |
 
+The system configuration is here.
+![](../docs/assets/EK_RZG3E_buringup.gif)
+
 ## Necessary Software  
 This document explains how to run the application with using the pre-build binary provided by [RZ/G3E Ethos v3.0 Prebuilt Binaries](https://www.renesas.com/en/document/sws/rzg3e-ethos-v30-rc1-prebuilt-binaries?r=25612558). After downloading it in your host, you can see the binary files to be stored in SD card for booting used as follows.
 
