@@ -24,7 +24,7 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 - Renesas MPU RZ/G3E
 
 >[NOTE]  
->The board currently on sale includes V1 device which does not support Ethos operation using LPDDR4/4X. Production is underway for the board with V2 sample, with stock expected to arrive at the end of June. To identify which sample is installed on an board, check the S.LOT No. printed on the board box.   
+>The evaluation board, RZ/G3E-EVKIT, currently on sale includes V1 device which does not support Ethos operation using LPDDR4/4X. Production is underway for the board with V2 sample, with stock expected to arrive at the end of June. To identify which sample is installed on an board, check the S.LOT No. printed on the board box.   
 >　Less than 0000300000: V1 sample installed  
 >　0000300000 or later: V2 sample installed    
 >   [Lot No. placement](./docs/assets/lot_no.png)
@@ -62,6 +62,7 @@ This repository provide the simpliped expanation. You can also refer to [Renesas
 ## Related software and information
  [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).  
  [Renesas RZ/G3E NPU (Ethos-U55) Support](https://renesas-rz.github.io/rz-ethos-u-docs/)  
+ [Evaluation Board Kit for RZ/G3E MPU, RZ/G3E-EVKIT](https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit)
 
 ## License
 See [LICENSE.md](LICENSE.md).
