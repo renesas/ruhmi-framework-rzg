@@ -12,7 +12,8 @@ also, in case you build the envronment by yourself on RZ/G3E-EVKIT, you need to 
 
 ## Target Environment
 
-- Board: [RZ/G3E-EVKIT](https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit)
+- Board:  
+  - [RZ/G3E-EVKIT](https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit)
 - Software:
   - RZ/G3E Ethos-U Package
   - RUHMI AI compiler artifacts generated on host
@@ -47,7 +48,7 @@ Please prepare the following hardware equipment.
 |Windows PC(optional) |Used for  a serial terminal connection (e.g. TeraTerm) |
 
 The system configuration is here.
-![](../docs/assets/EK_RZG3E_buringup.gif)
+![](../docs/assets/EVKIT_buringup.gif)
 
 ## Necessary Software  
 This document explains how to run the application with using the pre-build binary provided by [RZ/G3E Ethos v3.0 Prebuilt Binaries](https://www.renesas.com/en/document/sws/rzg3e-ethos-v30-rc1-prebuilt-binaries?r=25612558). After downloading it in your host, you can see the binary files to be stored in SD card for booting used as follows.
