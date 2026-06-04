@@ -36,8 +36,6 @@ System configuration:
 └── src	                                // Application source code
 ```
 
-`exe/` and `src/` are not included in this repository. Use the RZ/G3E release package for runnable assets.
-
 ## Model Information
 
 | AI Model  | Input size  | Output size   |
