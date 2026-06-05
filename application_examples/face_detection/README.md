@@ -2,8 +2,21 @@
 
 ## Overview
 
-This application performs face detection on RZ/G3E using either a USB camera stream or a still image file.
-Detection results are shown on an HDMI display.
+This application performs object detection (face detection) using a YOLO-based AI model. 
+
+The input is either an image file (.jpg/.png) or a USB camera input. The user can specify the input mode (IMAGE/USB). 
+
+The output is displayed on a 1920x1080 HDMI display in a Linux (Wayland) environment on RZ/G3E. 
+
+- IMAGE mode  
+FPS: Calculated by running pre-processing, inference, and post-processing 10 times consecutively and averaging the results. 
+Bounding boxes: Added to detected faces. 
+The number of detected faces is displayed. 
+
+- USB mode  
+FPS: The effective frame rate (FPS), including image input, pre-processing, inference, post-processing, and image display, is calculated by averaging 10 frames. 
+Bounding boxes: Added to detected faces. 
+The number of detected faces is displayed. 
 
 The model is compiled with the RUHMI AI Framework and executed with Ethos-U55 acceleration.
 

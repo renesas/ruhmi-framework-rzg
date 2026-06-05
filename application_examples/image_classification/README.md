@@ -2,8 +2,20 @@
 
 ## Overview
 
-This application performs image classification on RZ/G3E using either a USB camera stream or a still image file.
-Results are shown on an HDMI display.
+This application performs image classification using an AI model trained on ImageNet.
+
+Input is either an image file (.jpg/.png) or a USB camera input.
+The user can specify the input mode (IMAGE/USB) when running the AI ​​application to perform image classification in the desired mode.
+
+The output is displayed on a 1920x1080 HDMI display in a Linux (Wayland) environment on RZ/G3E.
+
+- IMAGE mode  
+FPS: Calculated by averaging 10 consecutive runs of pre-processing, inference, and post-processing.
+Image classification result: Displays the top 5 classification results.
+
+- USB mode  
+FPS: Calculated by averaging the effective frame rate (FPS) including image input, pre-processing, inference, post-processing, and image display over 10 frames.
+Image classification result: Displays the top 5 classification results.
 
 The model is compiled with the RUHMI AI Framework and executed with Ethos-U55 acceleration.
 
