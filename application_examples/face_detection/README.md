@@ -53,9 +53,9 @@ System configuration:
 
 | AI Model  | Input size  | Output size   |
 | ----- | ---------- | ---- |
-| [yolo-fastest_192_face_v4.tflite](https://github.com/emza-vs/ModelZoo/tree/master) |  int8 [1,192,192,1] | int8[1,6,6,18]<br>int8[1,12,12,18] |
+| [yolo-fastest_192_face_v4.tflite](yolo-fastest_192_face_v4.tflite) |  int8 [1,192,192,1] | int8[1,6,6,18]<br>int8[1,12,12,18] |
 
-- [Model reference](https://github.com/renesas/ruhmi-framework-mcu/tree/main/application_examples/face_detection#model-reference)
+- [Model reference](https://github.com/emza-vs/ModelZoo/tree/master)
 
 
 ## Build
