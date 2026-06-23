@@ -35,15 +35,15 @@ This repository provides the guidance for how to use RUHMI AI model compiler. Al
 - TensorFlow Lite/INT8
 
 > [NOTE]
-> The current version is the 1st release of RHUMI for RZ/G3E. The supported AI model is limited within **16MB**.
+> The current version is the 1st release of RUHMI for RZ/G3E. The supported AI model is limited within **16MB**.
 
 ## Installation and compilation
 1. Build the envronment and install RUHMI AI model compiler  
 - [Use Dockerfile](docs/dockerfile.md)  
-2. Cimpilae tha target model
+2. Compile tha target model
 - [Use the compilation Script](docs/generate-model-data.md)
 
-This repository provide the simpliped expanation. You can also refer to [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/).
+This repository provide the simplified expanation. You can also refer to [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/).
 
 ## Application Examples
 - [Common preparation to run](application_examples/README.md)
