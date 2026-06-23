@@ -55,7 +55,7 @@ System configuration:
 | ----- | ---------- | ---- |
 | [yolo-fastest_192_face_v4.tflite](yolo-fastest_192_face_v4.tflite) |  int8 [1,192,192,1] | int8[1,6,6,18]<br>int8[1,12,12,18] |
 
-- [Model reference](https://github.com/emza-vs/ModelZoo/tree/master)
+- [Model reference](https://github.com/emza-vs/ModelZoo/tree/master/object_detection)
 
 
 ## Build

@@ -1,7 +1,7 @@
 # Dockerfile Guide
 
 ## Overview
-`scripts/Dockerfile` builds an Ubuntu 22.04-based environment for compiling TFLite models with RUHMI AI model compiler and running `generate-model-data.py` whcih is the script to compile the target model.
+`scripts/Dockerfile` builds an Ubuntu 22.04-based environment for compiling TFLite models with RUHMI AI model compiler and running `generate-model-data.py` which is the script to compile the target model.
 
 ## Main Build Steps
 1. Start from `ubuntu:22.04`

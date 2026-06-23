@@ -2,8 +2,8 @@
 
 This directory contains sample AI applications for Renesas RZ/G3E using the RUHMI AI Framework runtime.
 
-The guidance below uses the pre-buld binaries to run the application. The software package providing the pre-build binaries can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
-also, in case you build the envronment by yourself on RZ/G3E-EVKIT, you need to get [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package). You can also refer to the [Renesas Rz/G3E NPU(Ethos0U55) SUpport](https://renesas-rz.github.io/rz-ethos-u-docs/) for more detail understanding. 
+The guidance below uses the pre-built binaries to run the application. The software package providing the pre-built binaries can be downloaded from [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package).
+Also, in case you build the environment by yourself on RZ/G3E-EVKIT, you need to get [RZ/G3E Ethos Support Package](https://www.renesas.com/en/software-tool/rzg3e-ethos-support-package). You can also refer to the [Renesas RZ/G3E NPU (Ethos-U55) Support](https://renesas-rz.github.io/rz-ethos-u-docs/) for more detail understanding.
 
 
 ## Included Examples
@@ -97,7 +97,7 @@ Mount SD card into Linux system.
 sudo mkdir /mnt/sd -p
 sudo mount /dev/sdb2 /mnt/sd
 ```
-Create the folder for allication files to be placed.
+Create the folder for application files to be placed.
 In case follow, the application folder is under *home*.
 ```
 sudo mkdir /mnt/sd/home/app
@@ -176,7 +176,7 @@ smarc-rzg3e login: root
 ```
 
 ### Run the Application Example
-You have aleady seen the neccesary files in the syetm after booting from SD card.
+You have already seen the necessary files in the system after booting from SD card.
 
 ```
 CD /home/app/exe/

@@ -55,7 +55,6 @@ This repository provide the simplified expanation. You can also refer to [Renesa
 - `docs/`: supporting documentation and documentation assets
 - `install/`: MERA/RUHMI install artifacts (wheel files, shared libraries) and setup guide
 - `scripts/`: Docker build environment and model data generation script
-- `requirements-host.txt`: host-side Python dependency list
 - `README.md`: repository entry point
 - `LICENSE.md`: license terms
 
