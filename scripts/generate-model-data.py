@@ -62,7 +62,7 @@ def get_build_config(build_config: str) -> dict:
 
 def is_vela_model_size_supported(model_deploy_dir: str) -> bool:
     """
-    Checks that Vela model size does not exceed 32MB model size limit.
+    Checks that Vela model size does not exceed 16MB model size limit.
 
     Args:
         model_deploy_dir: RUHMI compilation deployment directory.
@@ -78,8 +78,8 @@ def is_vela_model_size_supported(model_deploy_dir: str) -> bool:
 
     model_size = model_path.stat().st_size
 
-    # Check if model size exceeds 32MB (33554432 bytes)
-    if model_size > 33554432:
+    # Check if model size exceeds 16MB (16777216 bytes)
+    if model_size > 16777216:
         return False
     elif model_size == 0:
         logger.error("Vela compiled Model file size is 0!")
@@ -228,9 +228,9 @@ if __name__ == '__main__':
                 host_arch='arm',
             )
 
-        # Check if model size exceeds 32MB limit before generating test data
+        # Check if model size exceeds 16MB limit before generating test data
         if not is_vela_model_size_supported(model_deploy_dir):
-            logger.error(f"Model ({model_name}) exceeds 32MB supported model size limit! This model cannot run on RZ/G3E!")
+            logger.error(f"Model ({model_name}) exceeds 16MB supported model size limit! This model cannot run on RZ/G3E!")
             sys.exit(1)
 
         model_config_list.append(generate_model_test_data(model_name, model_deploy_dir))
