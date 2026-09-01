@@ -31,6 +31,8 @@
 #include "wayland.h"
 /* Definition for ruhmi runtime wrapper */
 #include "MeraRuntimeEthosWrapper.h"
+#include <ctime>
+#include <fcntl.h>
 
 /*****************************************
  * Global Variables
@@ -64,7 +66,57 @@ std::map<float,int> result;
 
 static struct timespec start_time;
 static struct timespec end_time;
+
+// #*#
+static struct timespec start_time_preprocessing; 
+static struct timespec end_time_preprocessing;
+static struct timespec start_time_inference; 
+static struct timespec end_time_inference; 
+static struct timespec start_time_postprocess; 
+static struct timespec end_time_postprocessing; 
+static struct timespec start_inf_thread_wait;
+static struct timespec end_inf_thread_wait; 
+static struct timespec start_main_process_wait; 
+static struct timespec end_main_process_wait; 
+static struct timespec main_process_start;
+static struct timespec main_process_end;
+static struct timespec inf_thread_start;
+static struct timespec inf_thread_end; 
+static struct timespec inf_wait_capture_start;
+static struct timespec inf_wait_capture_end;
+static struct timespec start_display_time; 
+static struct timespec end_display_time;
+static struct timespec start_main_capture_time;
+static struct timespec end_main_capture_time; 
+static struct timespec start_main_calculate_fps_time; 
+static struct timespec end_main_calculate_fps_time; 
+static struct timespec start_display_classification_results; 
+static struct timespec end_display_classification_results;
+static struct timespec start_display_fps_time; 
+static struct timespec end_display_fps_time;  
+static struct timespec start_main_display_image_time;
+static struct timespec end_main_display_image_time;
+// #*#
+
 static float total_time = 0;
+
+//#*#
+static float preprocess_time = 0; 
+static float inference_time = 0; 
+static float postprocess_time = 0; 
+static float inf_wait_time = 0; 
+static float main_wait_time = 0; 
+static float main_process_time = 0; 
+static float inf_thread_capture_time = 0; 
+static float inf_thread_time = 0; 
+static float display_wait_time = 0; 
+static float main_capture_wait_time = 0; 
+static float main_calculate_fps_time = 0; 
+static float main_display_classification_time = 0; 
+static float main_display_fps_time = 0; 
+static float main_display_image_time = 0; 
+//#*#
+
 static bool fps_inited = false;
 static int fps_count = 0;
 const int window_num = 10; 
@@ -72,6 +124,7 @@ static std::atomic<float> fps(0.0f);
 
 cv::Mat bgra_image;
 cv::Mat yuyv_image;
+cv::Mat yuyv_image_2;
 cv::Mat input_image;
 cv::Mat frame_g;
 
@@ -294,6 +347,7 @@ void *R_Capture_Thread(void *cap_pipeline)
                 {
                     std::lock_guard<std::mutex> lock(mtx);
                     input_image = g_frame.clone();
+                    yuyv_image_2 = g_frame.clone();
                 }
                 inference_start.store(true); /* Flag for AI Inference Thread. */
             }
@@ -302,10 +356,11 @@ void *R_Capture_Thread(void *cap_pipeline)
             {
                 {
                     std::lock_guard<std::mutex> lock(mtx);
-                    yuyv_image = g_frame.clone();
+                    yuyv_image = yuyv_image_2;   
                 }
                 img_obj_ready.store(true); /* Flag for Main Thread. */
             }
+
             if (app_mode == AppMode::IMAGE)
             {
                 inference_done.store(true);
@@ -475,14 +530,17 @@ void *R_Inf_Img_Thread(void *threadid)
             fprintf(stderr, "[ERROR] Failed to preprocess input.\n");
             goto err;
         }
+
         /* Run inference */
         runtime.Run();
+
         /* Post-process */
         if (!postprocess_output())
         {
             fprintf(stderr, "[ERROR] Failed to Post Process.\n");
             goto err;
         }
+
     }
     /* Get Post-process End Time*/
     ret = timespec_get(&end_time, TIME_UTC);
@@ -539,6 +597,7 @@ void *R_Inf_Thread(void *threadid)
     /*Inference Loop Start*/
     while(1)
     {
+        
         while(1)
         {
             /* Get the Termination request semaphore value. If different then 1 Termination was requested*/
@@ -562,16 +621,20 @@ void *R_Inf_Thread(void *threadid)
             }
             usleep(WAIT_TIME);
         }
-        sem_wait(&producer);
         
         /* Pre-process */
         printf("[DEBUG] Start pre-process\n");
+
         if (!preprocess_input(input_image))
         {
             fprintf(stderr, "[ERROR] Failed to preprocess input.\n");
             goto err;
         } 
+
+        inference_start.store(false);
+
         runtime.Run();
+
         /* Post-process */
         printf("[DEBUG] Start post-process\n");
         if (!postprocess_output())
@@ -579,9 +642,9 @@ void *R_Inf_Thread(void *threadid)
             fprintf(stderr, "[ERROR] Failed to Post Process.\n");
             goto err;
         }
-        inference_start.store(false);
 
-        sem_post(&consumer);        
+        sem_post(&consumer); 
+        
     }
     /* End of Inference Loop*/
 
@@ -661,11 +724,16 @@ int8_t R_Main_Process()
         {
             goto main_proc_end;
         }
+
         /* Check img_obj_ready flag which is set in Capture Thread. */
         if (img_obj_ready.load())
         {
-            sem_wait(&consumer);
+
             bgra_image = yuyv_image;
+            img_obj_ready.store(0);
+            
+            sem_wait(&consumer);
+
             result_cnt = 0;
             bgra_image = create_output_frame(bgra_image);
             cv::putText(bgra_image, "Model : mobilenet_v1_0.25", cv::Point(DISP_IMAGE_OUTPUT_WIDTH + 5, 260), cv::FONT_HERSHEY_DUPLEX, font_scale, display_color::White, font_thickness); 
@@ -753,8 +821,6 @@ int8_t R_Main_Process()
             cv::cvtColor(bgra_image, bgra_image, cv::COLOR_BGR2BGRA);
             wayland.commit(bgra_image.data, NULL);
             
-            img_obj_ready.store(0);
-            sem_post(&producer);
         }
         /* Wait for 1 TICK */
         usleep(WAIT_TIME);
